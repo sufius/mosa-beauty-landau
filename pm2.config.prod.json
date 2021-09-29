@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "dcp.prod.server",
+      "script": "scripts/server.js",
+      "interpreter": "node",
+      "watch": ["scripts/server.js"],
+      "watch_options": {
+        "usePolling": true
+      }
+    }
+  ]
+}

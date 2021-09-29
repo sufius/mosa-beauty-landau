@@ -1,0 +1,62 @@
+.dcpCarousel .swiper-slide {
+  color: white;
+  padding: 40px 10%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.dcpCarousel .parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: top;
+}
+
+.dcpCarousel .swiper-slide .content {
+  float: left;
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+}
+
+.dcpCarousel .swiper-button-next,
+.dcpCarousel .swiper-button-prev {
+  top: 0;
+  height: 100%;
+  margin-top: 0;
+  width: 100px;
+}
+
+.dcpCarousel .swiper-button-next {
+  padding-right: 2%;
+  justify-content: flex-end;
+}
+
+.dcpCarousel .swiper-button-prev {
+  padding-left: 2%;
+  justify-content: flex-start;
+}
+
+.dcpCarousel .swiper-button-prev,
+.dcpCarousel .swiper-container-rtl .swiper-button-next {
+  left: 0;
+}
+
+.dcpCarousel .swiper-button-next,
+.dcpCarousel .swiper-container-rtl .swiper-button-prev {
+  right: 0;
+}
+
+.dcpCarousel .swiper-pagination-bullet {
+    width: 1.4rem;
+    height: 1.4rem;
+    color: white;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 8px;
+}

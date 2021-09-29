@@ -1,0 +1,62 @@
+{
+  "name": "dada-clean-pfalz",
+  "version": "5.0.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.0-rc.1",
+    "@mui/lab": "^5.0.0-alpha.45",
+    "@mui/material": "^5.0.0-rc.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "history": "^5.0.1",
+    "nodemailer": "^6.6.3",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-hook-form": "^6.15.8",
+    "react-obfuscate": "^3.6.8",
+    "react-phone-number-input": "^3.1.26",
+    "react-player": "^2.9.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "latest",
+    "react-scroll": "^1.8.3",
+    "swiper": "^6.8.4",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "start": "PORT=8080 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "npm run build && pm2 start pm2.config.prod.json"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "devDependencies": {
+    "@types/material-ui": "^0.21.9",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/react-phone-number-input": "^3.0.11",
+    "@types/react-router-dom": "^5.1.9",
+    "@types/react-scroll": "^1.8.3",
+    "eslint-config-react-app": "^6.0.0"
+  }
+}
