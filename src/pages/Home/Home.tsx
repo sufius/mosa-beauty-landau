@@ -43,8 +43,8 @@ const StyledToolbar = styled(Toolbar)(() => ({
   paddingTop: "16px",
   // Override media queries injected by theme.mixins.toolbar
   "@media all": {
-    justifyContent: "center"
-  }
+    justifyContent: "center",
+  },
 }));
 
 type Inputs = {
@@ -58,7 +58,7 @@ const defaultValues = {
   name: "",
   email: "",
   mobile: "+49",
-  emailText: ""
+  emailText: "",
 };
 
 export default function Home() {
@@ -77,7 +77,7 @@ export default function Home() {
       delay: 100,
       smooth: true,
       containerId: "body",
-      offset: -100 // Scrolls to element + 50 pixels down the page
+      offset: -100, // Scrolls to element + 50 pixels down the page
     });
   };
 
@@ -88,24 +88,24 @@ export default function Home() {
   const methods = useForm<Inputs>({
     defaultValues,
     mode: "all",
-    reValidateMode: "onBlur"
+    reValidateMode: "onBlur",
   });
 
   const {
     register,
     handleSubmit,
-    formState: { errors, isValid }
+    formState: { errors, isValid },
   } = methods;
 
-  const onSubmit: SubmitHandler<Inputs> = data => {
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
     setIsSubmitting(true);
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
+      body: JSON.stringify(data),
     };
     fetch("/request/quotation", requestOptions)
-      .then(response => {
+      .then((response) => {
         if (!response.ok) {
           throw Error(response.statusText);
         }
@@ -139,7 +139,7 @@ export default function Home() {
             style={{
               color: "inherit",
               textDecoration: "inherit",
-              minWidth: "169px"
+              minWidth: "169px",
             }}
             tel={process.env.REACT_APP_OWNER_TEL}
           />
@@ -149,7 +149,7 @@ export default function Home() {
           "Über uns",
           "Dienstleistungen",
           "Bewertungen",
-          "Kontakt"
+          "Kontakt",
         ].map((text, index) => (
           <ListItem
             button
@@ -173,7 +173,7 @@ export default function Home() {
       <AppBar
         position="fixed"
         sx={{
-          width: "100%"
+          width: "100%",
         }}
       >
         <Toolbar>
@@ -187,7 +187,7 @@ export default function Home() {
             <img
               style={{
                 verticalAlign: "bottom",
-                maxHeight: matchSmall ? 40 : 47
+                maxHeight: matchSmall ? 40 : 47,
               }}
               src={matchSmall ? "/logo_white_small.png" : "/logo_white.png"}
               alt={`brand for ${process.env.REACT_APP_SITE_NAME}`}
@@ -218,7 +218,7 @@ export default function Home() {
                 style={{
                   color: "inherit",
                   textDecoration: "inherit",
-                  minWidth: "169px"
+                  minWidth: "169px",
                 }}
                 tel={process.env.REACT_APP_OWNER_TEL}
               />
@@ -242,11 +242,11 @@ export default function Home() {
         open={mobileOpen}
         onClose={handleDrawerToggle}
         ModalProps={{
-          keepMounted: true // Better open performance on mobile.
+          keepMounted: true, // Better open performance on mobile.
         }}
         sx={{
           display: { xs: "block", md: "none" },
-          "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth }
+          "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
         }}
       >
         {drawer}
@@ -271,13 +271,13 @@ export default function Home() {
                 xs={12}
                 md={6}
                 sx={{
-                  display: { md: "block", xs: "none" }
+                  display: { md: "block", xs: "none" },
                 }}
               >
                 <Card
                   sx={{
                     maxWidth: "100%",
-                    borderRadius: "4px"
+                    borderRadius: "4px",
                   }}
                 >
                   <CardMedia
@@ -290,8 +290,8 @@ export default function Home() {
               </Grid>
               <Grid item xs={12} md={6}>
                 <Typography paragraph align="justify">
-                  Mit ALALI-BAU sind wir als Familienunternehmen schon
-                  seit 10 Jahren erfolgreich in der Reinigungsbranche tätig. Wir
+                  Mit ALALI-BAU sind wir als Familienunternehmen schon seit 10
+                  Jahren erfolgreich in der Reinigungsbranche tätig. Wir
                   entwickeln für unsere Kunden maßgeschneiderte Lösungen rund um
                   das Thema Reinigung und Pflege von Innen- und Außenanlagen.
                   Unser Ziel ist es unserem Qualitätsanspruch gerecht zu werden
@@ -304,7 +304,7 @@ export default function Home() {
                     maxWidth: "100%",
                     borderRadius: "4px",
                     display: { md: "none", sm: "block" },
-                    mb: 2
+                    mb: 2,
                   }}
                 >
                   <CardMedia
@@ -324,7 +324,8 @@ export default function Home() {
                   Hausmeistertätigkeiten. Wir bieten unseren Kunden ein breites
                   Portfolio an Dienstleistungen rund um das Thema Reinigung und
                   Sauberkeit. Überzeugen sie sich selbst und fordern sie noch
-                  heute ein Angebot an. Verlieren Sie keine Zeit! Wir freuen uns auf Ihren Anruf.
+                  heute ein Angebot an. Verlieren Sie keine Zeit! Wir freuen uns
+                  auf Ihren Anruf.
                 </Typography>
               </Grid>
             </Grid>
@@ -549,7 +550,7 @@ export default function Home() {
               sx={{
                 fontWeight: "light",
                 mb: !matchMedium ? 3 : 2,
-                mt: 4
+                mt: 4,
               }}
             >
               BEWERTUNGEN
@@ -567,7 +568,7 @@ export default function Home() {
               sx={{
                 fontWeight: "light",
                 mb: !matchMedium ? 3 : 2,
-                mt: !matchMedium ? 6 : 5
+                mt: !matchMedium ? 6 : 5,
               }}
             >
               GRATIS ANGEBOT EINHOLEN
@@ -586,7 +587,7 @@ export default function Home() {
                   all Ihre Fragen zu beantworten. Anschließend erstellen wir
                   Ihnen ein individuelles Angebot."
                     sx={{
-                      pb: 0
+                      pb: 0,
                     }}
                     align="justify"
                   />
@@ -614,7 +615,7 @@ export default function Home() {
                             name="email"
                             inputRef={register({
                               required: true,
-                              pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
+                              pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
                             })}
                             error={Boolean(errors.email)}
                             helperText={
@@ -669,7 +670,7 @@ export default function Home() {
                     <CardActions
                       sx={{
                         p: 2,
-                        pt: 0
+                        pt: 0,
                       }}
                     >
                       <LoadingButton
@@ -693,7 +694,7 @@ export default function Home() {
         sx={{
           flexGrow: 1,
           mt: 4,
-          boxShadow: "0px -5px 5px rgba(11, 0, 93, 0.3)"
+          boxShadow: "0px -5px 5px rgba(11, 0, 93, 0.3)",
         }}
       >
         <AppBar position="static">
@@ -714,7 +715,7 @@ export default function Home() {
                     style={{
                       color: "inherit",
                       textDecoration: "inherit",
-                      fontWeight: "bold"
+                      fontWeight: "bold",
                     }}
                     to="/"
                     onClick={() => {
@@ -747,7 +748,7 @@ export default function Home() {
                     fontWeight: "light",
                     borderBottom: matchSmall
                       ? "1px solid rgba(255, 255, 255, 0.4)"
-                      : ""
+                      : "",
                   }}
                 >
                   <Obfuscate
@@ -773,7 +774,7 @@ export default function Home() {
                   sx={{
                     fontWeight: "bold",
                     lineHeight: 1.3,
-                    pt: matchSmall ? 1 : 0
+                    pt: matchSmall ? 1 : 0,
                   }}
                 >
                   Inhaber:
@@ -798,7 +799,7 @@ export default function Home() {
                     fontWeight: "light",
                     borderBottom: matchSmall
                       ? "1px solid rgba(255, 255, 255, 0.4)"
-                      : ""
+                      : "",
                   }}
                 >
                   {process.env.REACT_APP_OWNER_HWK}
@@ -812,7 +813,7 @@ export default function Home() {
                   sx={{
                     fontWeight: "bold",
                     lineHeight: 1.3,
-                    pt: matchSmall ? 1 : 0
+                    pt: matchSmall ? 1 : 0,
                   }}
                 >
                   Anschrift:
@@ -838,7 +839,7 @@ export default function Home() {
                     fontWeight: "light",
                     borderBottom: matchSmall
                       ? "1px solid rgba(255, 255, 255, 0.4)"
-                      : ""
+                      : "",
                   }}
                 >
                   <Obfuscate
@@ -846,7 +847,7 @@ export default function Home() {
                     email={process.env.REACT_APP_OWNER_MAIL}
                     headers={{
                       subject: "Nachricht von Webseite",
-                      body: "Sehr geehrte Damen und Herren,"
+                      body: "Sehr geehrte Damen und Herren,",
                     }}
                   />
                 </Typography>
@@ -894,4 +895,4 @@ export default function Home() {
       </Box>
     </>
   );
-};
+}
