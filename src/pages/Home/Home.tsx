@@ -324,7 +324,7 @@ export default function Home() {
                   Hausmeistertätigkeiten. Wir bieten unseren Kunden ein breites
                   Portfolio an Dienstleistungen rund um das Thema Reinigung und
                   Sauberkeit. Überzeugen sie sich selbst und fordern sie noch
-                  heute ein Angebot an!
+                  heute ein Angebot an. Verlieren Sie keine Zeit! Wir freuen uns auf Ihren Anruf.
                 </Typography>
               </Grid>
             </Grid>
@@ -339,15 +339,15 @@ export default function Home() {
             >
               DIENSTLEISTUNGEN
             </Typography>
-            <Grid container spacing={2} sx={{ mt: 0 }}>
-              <Grid item xs={12} md={5}>
+            <Grid container spacing={4} sx={{ mt: 0 }}>
+              <Grid item xs={12} md={4}>
                 <Typography
                   variant="h6"
                   component="h2"
                   gutterBottom
                   align="center"
                 >
-                  REINIGUNG VON BÜROS, <br /> GEBÄUDEN UND WOHNHÄUSERN
+                  ASPHALTIERUNG
                 </Typography>
                 <Typography align="justify">
                   Die professionelle Reinigung von Büroräumen umfasst die
@@ -362,21 +362,14 @@ export default function Home() {
                   in den Reinigungsprozess miteinbezogen.
                 </Typography>
               </Grid>
-              <Grid
-                item
-                md={2}
-                sx={{
-                  display: { md: "block", xs: "none" }
-                }}
-              ></Grid>
-              <Grid item xs={12} md={5}>
+              <Grid item xs={12} md={4}>
                 <Typography
                   variant="h6"
                   component="h2"
                   gutterBottom
                   align="center"
                 >
-                  REINIGUNG VON <br /> GESCHÄFTSRÄUMEN
+                  BAUTENTROCKNUNG
                 </Typography>
                 <Typography align="justify">
                   Wir bieten auch eine breite Palette von Vorschlägen für die
@@ -392,14 +385,14 @@ export default function Home() {
                   Wänden gehören zu unseren Aufgaben in diesem Tätigkeitsfeld.
                 </Typography>
               </Grid>
-              <Grid item xs={12} md={5}>
+              <Grid item xs={12} md={4}>
                 <Typography
                   variant="h6"
                   component="h2"
                   gutterBottom
                   align="center"
                 >
-                  HOCHDRUCK-, BAU- <br /> UND GRUNDREINIGUNG
+                  BETONBOHREN <br /> UND BETONSCHNEIDEN
                 </Typography>
                 <Typography align="justify">
                   So, die Renovierung ist endlich vorbei... Aber wie geht es nun
@@ -414,21 +407,14 @@ export default function Home() {
                   darauf wartet pünktlich und sorgfältig bewältigt zu werden.
                 </Typography>
               </Grid>
-              <Grid
-                item
-                md={2}
-                sx={{
-                  display: { md: "block", xs: "none" }
-                }}
-              ></Grid>
-              <Grid item xs={12} md={5}>
+              <Grid item xs={12} md={4}>
                 <Typography
                   variant="h6"
                   component="h2"
                   gutterBottom
                   align="center"
                 >
-                  GARTENPFLEGE UND <br /> SOLARANLAGENREINIGUNG
+                  BODENBELAGSARBEITEN
                 </Typography>
                 <Typography align="justify">
                   Alle Pflanzen, von Blumen bis hin zu Bäumen, erfordern eine
@@ -440,6 +426,116 @@ export default function Home() {
                   Düngung, das gießen der Pflanzen, das schützen der Pflanzen
                   vor Schädlingen und Krankheiten, dem beschneiden von Zweigen
                   und natürlich auch dem rasenmähen.
+                </Typography>
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <Typography
+                  variant="h6"
+                  component="h2"
+                  gutterBottom
+                  align="center"
+                >
+                  MONTAGESERVICE
+                </Typography>
+                <Typography align="justify">
+                  Die professionelle Reinigung von Büroräumen umfasst die
+                  vollständige Reinigung aller Arten von Verunreinigungen mit
+                  einem Staubsauger sowie die manuelle und maschinelle Reinigung
+                  von Fenstern und Fensterbänken, Türen und Türgriffen, Böden,
+                  Geländer, Schildern und dekorativen Komponenten des
+                  Innenraums. Bei der Büroreinigung achten wir nicht nur auf
+                  alle Oberflächen und Einrichtungselemente, sondern auch auf
+                  die Büroausstattung. Auch Schränke, Regale, Heizkörperblenden,
+                  Lüftungsgitter und Oberflächen von Stühlen und Sesseln werden
+                  in den Reinigungsprozess miteinbezogen.
+                </Typography>
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <Typography
+                  variant="h6"
+                  component="h2"
+                  gutterBottom
+                  align="center"
+                >
+                  VERFUGEN
+                </Typography>
+                <Typography align="justify">
+                  Wir bieten auch eine breite Palette von Vorschlägen für die
+                  kostengünstige und tägliche Reinigung von Geschäftsräumen an.
+                  Wir verwenden nur sichere Reinigungsmittel und moderne
+                  Waschgeräte zu einem erschwinglichen Preis und bieten ein
+                  Rabattsystem für Stammkunden sowie einen fortlaufenden
+                  Leistungsnachweis, um somit eine Garantie für die Sauberkeit
+                  aller Räumlichkeiten ohne hohe Kosten zu gewährleisten! Auch
+                  die Reinigung schwer zugänglicher Stellen, Trockenreinigung
+                  von Möbeln, Spiegeln, Fenstern, Rohren, Lüftungs- und
+                  Isolierkästen, Kristallisation von Fußböden, Waschen von
+                  Wänden gehören zu unseren Aufgaben in diesem Tätigkeitsfeld.
+                </Typography>
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <Typography
+                  variant="h6"
+                  component="h2"
+                  gutterBottom
+                  align="center"
+                >
+                  HOLZ- UND BAUTENSCHUTZ
+                </Typography>
+                <Typography align="justify">
+                  So, die Renovierung ist endlich vorbei... Aber wie geht es nun
+                  weiter? In der Regel ist zunächst eine gründliche Reinigung
+                  aller Räume nötig, das heißt die Beseitigung von
+                  Bauschuttresten, Staub, Spuren von Spachtelresten auf Glas und
+                  Bodenbelägen. Wir führen nicht nur die Reinigung durch,
+                  sondern desinfizieren auch die Sanitärarmaturen - also die
+                  Orte der größten Schmutzansammlung. Bei Bedarf führen wir auch
+                  Hochhausarbeiten durch und waschen den äußeren Teil von
+                  Fenstern und Fassaden. Es gibt also jede Menge Arbeit, die nur
+                  darauf wartet pünktlich und sorgfältig bewältigt zu werden.
+                </Typography>
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <Typography
+                  variant="h6"
+                  component="h2"
+                  gutterBottom
+                  align="center"
+                >
+                  KABELVERLEGUNG
+                </Typography>
+                <Typography align="justify">
+                  Alle Pflanzen, von Blumen bis hin zu Bäumen, erfordern eine
+                  ständige Pflege in Form von Bewässerung, Beschneidung und
+                  Behandlung von speziellen Pestiziden. Das pflanzen und pflegen
+                  von Pflanzen ist ein sehr mühsamer Prozess, der entsprechende
+                  Kenntnisse, Mühe und Zeit erfordert. Wir helfen Ihnen gerne
+                  dabei und kümmern uns um eine Lockerung des Bodens und seine
+                  Düngung, das gießen der Pflanzen, das schützen der Pflanzen
+                  vor Schädlingen und Krankheiten, dem beschneiden von Zweigen
+                  und natürlich auch dem rasenmähen.
+                </Typography>
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <Typography
+                  variant="h6"
+                  component="h2"
+                  gutterBottom
+                  align="center"
+                >
+                  ROHR- UND KANALREINIGUNG
+                </Typography>
+                <Typography align="justify">
+                  Die professionelle Reinigung von Büroräumen umfasst die
+                  vollständige Reinigung aller Arten von Verunreinigungen mit
+                  einem Staubsauger sowie die manuelle und maschinelle Reinigung
+                  von Fenstern und Fensterbänken, Türen und Türgriffen, Böden,
+                  Geländer, Schildern und dekorativen Komponenten des
+                  Innenraums. Bei der Büroreinigung achten wir nicht nur auf
+                  alle Oberflächen und Einrichtungselemente, sondern auch auf
+                  die Büroausstattung. Auch Schränke, Regale, Heizkörperblenden,
+                  Lüftungsgitter und Oberflächen von Stühlen und Sesseln werden
+                  in den Reinigungsprozess miteinbezogen.
                 </Typography>
               </Grid>
             </Grid>
