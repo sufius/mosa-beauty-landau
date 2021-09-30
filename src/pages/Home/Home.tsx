@@ -202,6 +202,7 @@ export default function Home() {
               }}
               aria-label="nav tabs"
               textColor="inherit"
+              TabIndicatorProps={{style: {backgroundColor: "white"}}}
             >
               <Tab label="Start" value={"section_1"} />
               <Tab label="Über uns" value={"section_2"} />
