@@ -292,13 +292,12 @@ export default function Home() {
               <Grid item xs={12} md={6}>
                 <Typography paragraph align="justify">
                   Mit ALALI-BAU sind wir als Familienunternehmen schon seit 10
-                  Jahren erfolgreich in der Reinigungsbranche tätig. Wir
-                  entwickeln für unsere Kunden maßgeschneiderte Lösungen rund um
-                  das Thema Reinigung und Pflege von Innen- und Außenanlagen.
-                  Unser Ziel ist es unserem Qualitätsanspruch gerecht zu werden
-                  und diesen zu wahren, um somit eine Vertrauensbasis zu
-                  schaffen, während sich der Kunde auf sein Kerngeschäft
-                  konzentrieren kann.
+                  Jahren erfolgreich in der Baubranche tätig. Wir entwickeln für
+                  unsere Kunden maßgeschneiderte Lösungen rund um das Thema
+                  Bau-, Reparatur- und Montagearbeiten. Wir garantieren unseren
+                  Kunden eine individuelle Herangehensweise und ein auf ihn
+                  zugeschnittenes Angebot. Unser Ziel ist es einen bleibenden
+                  und positiven Eindruck zu hinterlassen.
                 </Typography>
                 <Card
                   sx={{
@@ -316,17 +315,17 @@ export default function Home() {
                   />
                 </Card>
                 <Typography paragraph align="justify">
-                  Unser einzigartiges Angebot ist die Reinigung von Innen- und
-                  Außenanlagen zu wettbewerbsfähigen Preisen. Egal ob Reinigung
-                  von Wohnungen, Büros, Hütten, Garagen, Solaranlagen, Fenstern,
-                  Treppen, Teppichen, Gartenarbeiten, dem Reinigen nach
-                  Renovierungs- und Sanierungsarbeiten, einem Frühjahrsputz,
-                  aber auch das Erledigen von alltäglichen
-                  Hausmeistertätigkeiten. Wir bieten unseren Kunden ein breites
-                  Portfolio an Dienstleistungen rund um das Thema Reinigung und
-                  Sauberkeit. Überzeugen sie sich selbst und fordern sie noch
-                  heute ein Angebot an. Verlieren Sie keine Zeit! Wir freuen uns
-                  auf Ihren Anruf.
+                  Unser Unternehmen asphaltiert seit etwa zehn Jahren Straßen
+                  regional und überregional und hat sich auf dem Markt für die
+                  damit verbundenen Dienstleistungen einen tadellosen Ruf
+                  erarbeitet. Für uns gibt es keine kleinen oder unmöglichen
+                  Aufträge: Wir übernehmen den Bau von Straßen - unabhängig vom
+                  Bestimmungsort - sowie deren Reparatur. Wir bieten unseren
+                  Kunden ein breites Portfolio an Dienstleistungen. So bieten
+                  wir beispielsweise Arbeiten als Asphaltierier,
+                  Betonbohrer/-schneider, Bodenleger, Einbauer genormter
+                  Baufertigteile, Fuger, Holz-/Bautenschützer, Kabelverleger,
+                  Rohr-/Kanalreiniger und Arbeiten zur Bautentrocknung an.
                 </Typography>
               </Grid>
             </Grid>
@@ -352,16 +351,14 @@ export default function Home() {
                   ASPHALTIERUNG
                 </Typography>
                 <Typography align="justify">
-                  Die professionelle Reinigung von Büroräumen umfasst die
-                  vollständige Reinigung aller Arten von Verunreinigungen mit
-                  einem Staubsauger sowie die manuelle und maschinelle Reinigung
-                  von Fenstern und Fensterbänken, Türen und Türgriffen, Böden,
-                  Geländer, Schildern und dekorativen Komponenten des
-                  Innenraums. Bei der Büroreinigung achten wir nicht nur auf
-                  alle Oberflächen und Einrichtungselemente, sondern auch auf
-                  die Büroausstattung. Auch Schränke, Regale, Heizkörperblenden,
-                  Lüftungsgitter und Oberflächen von Stühlen und Sesseln werden
-                  in den Reinigungsprozess miteinbezogen.
+                  Die Asphaltierung ist ein moderner Ansatz zur Verbesserung von
+                  Straßen und Gehwegen. Es ist eine Aufgabe, die keine Fehler
+                  duldet. So ist beispielsweise der Einbau von Heißasphalt mit
+                  einer strikten Einhaltung der Technik verbunden, da eine
+                  Mischung schnell auskühlt. Dies bedeutet, dass es zügig und
+                  exakt auf den vorbereiteten Untergrund verlegt werden muss, da
+                  sonst der Asphalteinbau unnötige Kosten und mehr Zeit in
+                  Anspruch nimmt.
                 </Typography>
               </Grid>
               <Grid item xs={12} md={4}>
@@ -394,7 +391,7 @@ export default function Home() {
                   gutterBottom
                   align="center"
                 >
-                  BETONBOHREN <br /> UND BETONSCHNEIDEN
+                  BETONBOHREN UND -SCHNEIDEN
                 </Typography>
                 <Typography align="justify">
                   So, die Renovierung ist endlich vorbei... Aber wie geht es nun
