@@ -107,9 +107,9 @@ export default function DcpCarousel() {
                 paragraph
                 align="justify"
               >
-                Der Meister persönlich verlegte das Laminat im Raum. Zufrieden
-                mit der Qualität! Der Preis war der gleiche wie zu Beginn
-                vereinbart.
+                Der Meister persönlich verlegte das Laminat im Raum. Ich bin
+                sehr zufrieden mit der Qualität! Der Preis war der gleiche wie
+                zu Beginn vereinbart.
               </Typography>
             </div>
             <div data-swiper-parallax="-200">
