@@ -202,7 +202,7 @@ export default function Home() {
               }}
               aria-label="nav tabs"
               textColor="inherit"
-              TabIndicatorProps={{style: {backgroundColor: "white"}}}
+              TabIndicatorProps={{ style: { backgroundColor: "white" } }}
             >
               <Tab label="Start" value={"section_1"} />
               <Tab label="Über uns" value={"section_2"} />
@@ -371,17 +371,14 @@ export default function Home() {
                   BAUTENTROCKNUNG
                 </Typography>
                 <Typography align="justify">
-                  Wir bieten auch eine breite Palette von Vorschlägen für die
-                  kostengünstige und tägliche Reinigung von Geschäftsräumen an.
-                  Wir verwenden nur sichere Reinigungsmittel und moderne
-                  Waschgeräte zu einem erschwinglichen Preis und bieten ein
-                  Rabattsystem für Stammkunden sowie einen fortlaufenden
-                  Leistungsnachweis, um somit eine Garantie für die Sauberkeit
-                  aller Räumlichkeiten ohne hohe Kosten zu gewährleisten! Auch
-                  die Reinigung schwer zugänglicher Stellen, Trockenreinigung
-                  von Möbeln, Spiegeln, Fenstern, Rohren, Lüftungs- und
-                  Isolierkästen, Kristallisation von Fußböden, Waschen von
-                  Wänden gehören zu unseren Aufgaben in diesem Tätigkeitsfeld.
+                  Wir sind Experten für die Entfeuchtung und Trocknung von
+                  Wänden und Räumen. Wir arbeiten mit beliebigen Objekten:
+                  Wohnungen, Privathäuser, Büros, Produktionsräume, Dächer,
+                  Keller, Sockel usw. Im Laufe der Jahre haben wir umfangreiche
+                  Erfahrung für schnelle Lösungen im Fall einer Überschwemmung
+                  oder bei der Bildung von Schimmel gesammelt. Für jeden
+                  konkreten Fall wählen wir eine effiziente Lösung, damit die
+                  Entfeuchtung zu 100% effektiv ist.
                 </Typography>
               </Grid>
               <Grid item xs={12} md={4}>
@@ -394,16 +391,14 @@ export default function Home() {
                   BETONBOHREN UND -SCHNEIDEN
                 </Typography>
                 <Typography align="justify">
-                  So, die Renovierung ist endlich vorbei... Aber wie geht es nun
-                  weiter? In der Regel ist zunächst eine gründliche Reinigung
-                  aller Räume nötig, das heißt die Beseitigung von
-                  Bauschuttresten, Staub, Spuren von Spachtelresten auf Glas und
-                  Bodenbelägen. Wir führen nicht nur die Reinigung durch,
-                  sondern desinfizieren auch die Sanitärarmaturen - also die
-                  Orte der größten Schmutzansammlung. Bei Bedarf führen wir auch
-                  Hochhausarbeiten durch und waschen den äußeren Teil von
-                  Fenstern und Fassaden. Es gibt also jede Menge Arbeit, die nur
-                  darauf wartet pünktlich und sorgfältig bewältigt zu werden.
+                  Wenn in Stein, Mauerwerk, Beton und Stahlbeton effiziert
+                  geborhrt werden soll, ist es unabdinglich Sägeblätter mit
+                  Diamantbesetzung einzusetzen. Das Bohren mit Diamantbohrern
+                  ist bei jeder Dicke von Wänden, Bodenplatten oder Fundamenten
+                  möglich. Zudem bieten wir mittels Nassverfahren und
+                  entsprechender Saugvorrichtung eine staubfreie Umsetzung. Was
+                  auch immer die anstehende Aufgabe ist, wir bieten etablierte
+                  Wege, diese zu lösen.
                 </Typography>
               </Grid>
               <Grid item xs={12} md={4}>
@@ -416,15 +411,14 @@ export default function Home() {
                   BODENBELAGSARBEITEN
                 </Typography>
                 <Typography align="justify">
-                  Alle Pflanzen, von Blumen bis hin zu Bäumen, erfordern eine
-                  ständige Pflege in Form von Bewässerung, Beschneidung und
-                  Behandlung von speziellen Pestiziden. Das pflanzen und pflegen
-                  von Pflanzen ist ein sehr mühsamer Prozess, der entsprechende
-                  Kenntnisse, Mühe und Zeit erfordert. Wir helfen Ihnen gerne
-                  dabei und kümmern uns um eine Lockerung des Bodens und seine
-                  Düngung, das gießen der Pflanzen, das schützen der Pflanzen
-                  vor Schädlingen und Krankheiten, dem beschneiden von Zweigen
-                  und natürlich auch dem rasenmähen.
+                  Eine Bodenverlegung ist eine verantwortungsvolle Aufgabe, die
+                  am besten gleich von Profis erledigt wird. Die Behaglichkeit
+                  und der Komfort des Wohnens sowie die Lebensdauer des Bodens
+                  hängen von der Qualität der ausgeführten Umsetzung ab. Wir
+                  bieten einen Service für die Verlegung und Reparatur von
+                  Bodenbelägen wie beispielsweise Laminat, Parkett, Linoleum,
+                  Quarz-Vinyl-Fliesen und Teppich. Wir führen die Arbeiten
+                  qualitativ hochwertig und im vereinbarten Zeitrahmen aus.
                 </Typography>
               </Grid>
               <Grid item xs={12} md={4}>
@@ -437,16 +431,14 @@ export default function Home() {
                   MONTAGESERVICE
                 </Typography>
                 <Typography align="justify">
-                  Die professionelle Reinigung von Büroräumen umfasst die
-                  vollständige Reinigung aller Arten von Verunreinigungen mit
-                  einem Staubsauger sowie die manuelle und maschinelle Reinigung
-                  von Fenstern und Fensterbänken, Türen und Türgriffen, Böden,
-                  Geländer, Schildern und dekorativen Komponenten des
-                  Innenraums. Bei der Büroreinigung achten wir nicht nur auf
-                  alle Oberflächen und Einrichtungselemente, sondern auch auf
-                  die Büroausstattung. Auch Schränke, Regale, Heizkörperblenden,
-                  Lüftungsgitter und Oberflächen von Stühlen und Sesseln werden
-                  in den Reinigungsprozess miteinbezogen.
+                  Eine professionelle Montage von Fenstern, Türen, Zargen und
+                  Regalen erfordert das Heranziehen eines hochqualifizierten
+                  Spezialisten mit langjähriger Erfahrung. Denn die Stille und
+                  Wärme im Haus hängen eben von der Qualität solcher
+                  Einbauarbeiten ab. Egal ob Fenster, Fensterbänke, Türen oder
+                  Geländer, wir bieten Ihnen einen hochwertigen und
+                  vielschichtigen Einbau und sorgen somit für einen erhöhten
+                  Wohnkomfort, der sich bezahlt macht.
                 </Typography>
               </Grid>
               <Grid item xs={12} md={4}>
@@ -459,17 +451,15 @@ export default function Home() {
                   VERFUGEN
                 </Typography>
                 <Typography align="justify">
-                  Wir bieten auch eine breite Palette von Vorschlägen für die
-                  kostengünstige und tägliche Reinigung von Geschäftsräumen an.
-                  Wir verwenden nur sichere Reinigungsmittel und moderne
-                  Waschgeräte zu einem erschwinglichen Preis und bieten ein
-                  Rabattsystem für Stammkunden sowie einen fortlaufenden
-                  Leistungsnachweis, um somit eine Garantie für die Sauberkeit
-                  aller Räumlichkeiten ohne hohe Kosten zu gewährleisten! Auch
-                  die Reinigung schwer zugänglicher Stellen, Trockenreinigung
-                  von Möbeln, Spiegeln, Fenstern, Rohren, Lüftungs- und
-                  Isolierkästen, Kristallisation von Fußböden, Waschen von
-                  Wänden gehören zu unseren Aufgaben in diesem Tätigkeitsfeld.
+                  Wir bieten ein Ausfüllen und Abdichten von Fugen im Mauerwerk
+                  zwischen Betonbauteilen und Fassadenteilen, sowie bei
+                  Fenster-, Balkon- und Terrassenabdichtungen an. Eine
+                  Abdichtung erfolgt in der Regel mit spritzbaren,
+                  dauerelastischen Dehnungsdichtstoffen, wie beispielsweise
+                  Silikon und Acryl. Verfugmassen wie Zement und Mörtel setzen
+                  wir beispielsweise beim Verfugen von Sichtmauerwerk ein.
+                  Diesen Dienst bieten wir sowohl bei einer Erstverfugung in neu
+                  errichteten Gebäuden als auch bei einer Gebäudesanierung an.
                 </Typography>
               </Grid>
               <Grid item xs={12} md={4}>
@@ -482,16 +472,15 @@ export default function Home() {
                   HOLZ- UND BAUTENSCHUTZ
                 </Typography>
                 <Typography align="justify">
-                  So, die Renovierung ist endlich vorbei... Aber wie geht es nun
-                  weiter? In der Regel ist zunächst eine gründliche Reinigung
-                  aller Räume nötig, das heißt die Beseitigung von
-                  Bauschuttresten, Staub, Spuren von Spachtelresten auf Glas und
-                  Bodenbelägen. Wir führen nicht nur die Reinigung durch,
-                  sondern desinfizieren auch die Sanitärarmaturen - also die
-                  Orte der größten Schmutzansammlung. Bei Bedarf führen wir auch
-                  Hochhausarbeiten durch und waschen den äußeren Teil von
-                  Fenstern und Fassaden. Es gibt also jede Menge Arbeit, die nur
-                  darauf wartet pünktlich und sorgfältig bewältigt zu werden.
+                  Holz ist ein dem Menschen vertrauter Naturstoff, daher fühlt
+                  man sich in einem Holzhaus am wohlsten. Jedoch hat es zwar
+                  neben den unbestrittenen Vorteilen auch eine Reihe von
+                  Nachteilen: Es brennt leicht und ist auch anfällig für die
+                  Auswirkungen von Pilzen, Bakterien, Schimmelpilzen,
+                  Insektenschädlingen usw. Gerade deshalb ist eine Beschichtung
+                  der Oberflächen mit verschiedenen Schutzmitteln unabdinglich.
+                  Dieses Problem lösen wir mit Hilfe von Imprägnierungen und
+                  Verbindungen.
                 </Typography>
               </Grid>
               <Grid item xs={12} md={4}>
@@ -504,15 +493,16 @@ export default function Home() {
                   KABELVERLEGUNG
                 </Typography>
                 <Typography align="justify">
-                  Alle Pflanzen, von Blumen bis hin zu Bäumen, erfordern eine
-                  ständige Pflege in Form von Bewässerung, Beschneidung und
-                  Behandlung von speziellen Pestiziden. Das pflanzen und pflegen
-                  von Pflanzen ist ein sehr mühsamer Prozess, der entsprechende
-                  Kenntnisse, Mühe und Zeit erfordert. Wir helfen Ihnen gerne
-                  dabei und kümmern uns um eine Lockerung des Bodens und seine
-                  Düngung, das gießen der Pflanzen, das schützen der Pflanzen
-                  vor Schädlingen und Krankheiten, dem beschneiden von Zweigen
-                  und natürlich auch dem rasenmähen.
+                  Eine Kabelverlegung gehört zweifelsohne zu den
+                  sicherheitskritischen Aufgaben und erfordert daher das
+                  Heranziehen eines hochqualifizierten Spezialisten mit
+                  langjähriger Erfahrung. Und genau diese Erfahrung bringen wir
+                  mit. So bieten wir eine Verlegung und Installation von Kabeln
+                  und Kabelkanälen an. Hierbei ist eine der Phasen beim Verlegen
+                  von Freileitungen und Kabelstromleitungen die Installation von
+                  Drähten auf zuvor aufgestellten Stützen. Dabei führen unsere
+                  Spezialisten diese Arbeiten unter Berücksichtigung aktueller
+                  Industriestandards durch.
                 </Typography>
               </Grid>
               <Grid item xs={12} md={4}>
@@ -525,16 +515,14 @@ export default function Home() {
                   ROHR- UND KANALREINIGUNG
                 </Typography>
                 <Typography align="justify">
-                  Die professionelle Reinigung von Büroräumen umfasst die
-                  vollständige Reinigung aller Arten von Verunreinigungen mit
-                  einem Staubsauger sowie die manuelle und maschinelle Reinigung
-                  von Fenstern und Fensterbänken, Türen und Türgriffen, Böden,
-                  Geländer, Schildern und dekorativen Komponenten des
-                  Innenraums. Bei der Büroreinigung achten wir nicht nur auf
-                  alle Oberflächen und Einrichtungselemente, sondern auch auf
-                  die Büroausstattung. Auch Schränke, Regale, Heizkörperblenden,
-                  Lüftungsgitter und Oberflächen von Stühlen und Sesseln werden
-                  in den Reinigungsprozess miteinbezogen.
+                  Wir bieten eine hochwertige Reinigung und Spülung des
+                  Abwassersystems, der Rohrleitungen, der Heizungen und der
+                  Leitungen für die Wasserversorgung. Dabei verwenden wir
+                  hydrodynamische und mechanische Methoden. Eine leistungsstarke
+                  Pumpe, die nicht nur Flüssigkeit, sondern auch
+                  Schlammablagerungen abpumpt findet dabei Einsatz. Bei Bedarf
+                  bieten wir auch eine Videoaufnahme von den Abschnitten des
+                  Kanalnetzes an.
                 </Typography>
               </Grid>
             </Grid>
