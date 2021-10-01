@@ -61,7 +61,7 @@ export default function DcpCarousel() {
                 paragraph
                 sx={{ fontSize: matchSmall ? 16 : matchMedium ? 20 : 24 }}
               >
-                GRUNDREINIGUNG
+                Bodenbelagsarbeiten
               </Typography>
             </div>
             <div data-swiper-parallax="-100">
@@ -70,11 +70,10 @@ export default function DcpCarousel() {
                 paragraph
                 align="justify"
               >
-                Ich war mit der Qualität der geleisteten Arbeit sehr zufrieden!
-                Die Arbeiten wurden auf höchstem Niveau und innerhalb der
-                vereinbarten Zeit erledigt. Ich möchte euch meinen herzlichsten
-                Dank aussprechen, nicht nur für die hervorragende Arbeit,
-                sondern auch für die angenehme Arbeitsatmosphäre!
+                Wir waren mit der Arbeit zufrieden! Das Linoleum wurde sauber
+                verlegt, die Ecken, die Sockelleisten sind alle auf höchstem
+                Niveau. Alles sehr schnell und qualitativ hochwertig
+                durchgeführt, vielen Dank!
               </Typography>
             </div>
             <div data-swiper-parallax="-200">
@@ -83,7 +82,7 @@ export default function DcpCarousel() {
                 align="right"
                 sx={{ fontSize: matchSmall ? 14 : matchMedium ? 16 : 18 }}
               >
-                - Maria S.
+                - Norbert F.
               </Typography>
             </div>
           </Box>
@@ -99,7 +98,7 @@ export default function DcpCarousel() {
                 paragraph
                 sx={{ fontSize: matchSmall ? 16 : matchMedium ? 20 : 24 }}
               >
-                WOHNHAUSREINIGUNG
+                Bodenbelagsarbeiten
               </Typography>
             </div>
             <div data-swiper-parallax="-100">
@@ -108,11 +107,9 @@ export default function DcpCarousel() {
                 paragraph
                 align="justify"
               >
-                Ich habe eine Reinigung der Wohnung und das putzen der Fenster
-                bestellt. Sie haben alles mit hoher Qualität erledigt. Alles
-                glänzt blitzeblank. Ich bin sehr zufrieden und werde diesen
-                Service auch in Zukunft in Anspruch nehmen. Nochmals vielen Dank
-                euch.
+                Der Meister persönlich verlegte das Laminat im Raum. Zufrieden
+                mit der Qualität! Der Preis war der gleiche wie zu Beginn
+                vereinbart.
               </Typography>
             </div>
             <div data-swiper-parallax="-200">
@@ -121,7 +118,7 @@ export default function DcpCarousel() {
                 align="right"
                 sx={{ fontSize: matchSmall ? 14 : matchMedium ? 16 : 18 }}
               >
-                - Niklas C.
+                - Jürgen K.
               </Typography>
             </div>
           </Box>
@@ -137,7 +134,7 @@ export default function DcpCarousel() {
                 paragraph
                 sx={{ fontSize: matchSmall ? 16 : matchMedium ? 20 : 24 }}
               >
-                GEBÄUDEREINIGUNG
+                Montagearbeiten
               </Typography>
             </div>
             <div data-swiper-parallax="-100">
@@ -146,11 +143,10 @@ export default function DcpCarousel() {
                 paragraph
                 align="justify"
               >
-                Ich bestelle zum dritten Mal eine Generalreinigung der Wohnung.
-                Die erbrachte Leistung war einwandfrei und der Preis ist
-                günstiger als bei den meisten anderen Reinigungsfirmen, die ich
-                kenne. Ich empfehle diese Firma jedem, der eine qualitativ
-                hochwertige und schnelle Reinigung benötigt!!!
+                Ein ausgezeichnetes Unternehmen. Fenstertausch in einem Neubau,
+                Verglasung und Isolierung. Durchgehender Kontakt. Alle Arbeiten
+                wurden im Vertrag festgelegt. Ich werde euch jedem empfehlen,
+                den ich kenne. ALALI-BAU Vielen Dank!
               </Typography>
             </div>
             <div data-swiper-parallax="-200">
@@ -159,7 +155,7 @@ export default function DcpCarousel() {
                 align="right"
                 sx={{ fontSize: matchSmall ? 14 : matchMedium ? 16 : 18 }}
               >
-                - Paul G.
+                - Karl K.
               </Typography>
             </div>
           </Box>
