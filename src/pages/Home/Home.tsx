@@ -686,9 +686,6 @@ export default function Home() {
                         color: "inherit",
                         textDecoration: "inherit",
                         paddingBottom: matchSmall ? 3 * parseInt(theme.spacing()) + "px" : 2 * parseInt(theme.spacing()) + "px",
-                        borderBottom: matchSmall
-                        ? "1px solid rgba(255, 255, 255, 0.4)"
-                        : "",
                       }}
                     >
                       {process.env.REACT_APP_INSTAGRAM}
