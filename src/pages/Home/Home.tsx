@@ -34,6 +34,7 @@ import CallIcon from "@mui/icons-material/Call";
 import DcpCarousel from "../../components/DcpCarousel";
 import Hero from "../../components/Hero";
 import DcpPhoneInput from "../../components/DcpPhoneInput";
+import { hexToRgbA } from "../../utils/helpers";
 
 const drawerWidth = 240;
 
@@ -59,19 +60,6 @@ const defaultValues = {
   email: "",
   mobile: "+49",
   emailText: "",
-};
-
-const hexToRgbA = (hex, opacity = 0.3) => {
-    var c;
-    if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
-        c= hex.substring(1).split('');
-        if(c.length === 3){
-            c= [c[0], c[0], c[1], c[1], c[2], c[2]];
-        }
-        c= '0x'+c.join('');
-        return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',' + opacity + ')';
-    }
-    throw new Error('Bad Hex');
 };
 
 export default function Home() {
@@ -649,7 +637,7 @@ export default function Home() {
                     pt: matchSmall ? 1 : 0,
                   }}
                 >
-                  Inhaber:
+                  Inhaberin:
                 </Typography>
                 <Typography align="center" sx={{ pb: 2, fontWeight: "light" }}>
                   {process.env.REACT_APP_OWNER_NAME}

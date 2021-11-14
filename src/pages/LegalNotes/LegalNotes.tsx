@@ -11,13 +11,17 @@ import CardContent from "@mui/material/CardContent";
 import Obfuscate from "react-obfuscate";
 import CallIcon from "@mui/icons-material/Call";
 import { Link } from "react-router-dom";
+import { hexToRgbA } from "../../utils/helpers";
 
 export default function LegalNotes() {
   const theme = useTheme();
   const matchSmall = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <>
-      <AppBar position="static" sx={{ mb: 2 }}>
+      <AppBar position="static" sx={{
+        mb: 2,
+        boxShadow: "0 3px 5px 2px " + hexToRgbA(process.env.REACT_APP_PALETTE_PRIMARY_MAIN)
+      }}>
         <Toolbar>
           <Link style={{ color: "inherit", textDecoration: "inherit" }} to="/">
             <img
@@ -79,12 +83,16 @@ export default function LegalNotes() {
               {process.env.REACT_APP_OWNER_ADRESS_ZIP_CITY}
             </Typography>
 
-            <Typography variant="caption">
-              <strong>Handwerkskammer Betriebsnummer</strong>
-            </Typography>
-            <Typography paragraph variant="body1">
-              {process.env.REACT_APP_OWNER_HWK}
-            </Typography>
+            {process.env.REACT_APP_OWNER_HWK ? (
+              <>
+                <Typography variant="caption">
+                  <strong>Handwerkskammer Betriebsnummer</strong>
+                </Typography>
+                <Typography paragraph variant="body1">
+                  {process.env.REACT_APP_OWNER_HWK}
+                </Typography>
+              </>
+            ) : null }
 
             <Typography variant="caption">
               <strong>Telefonnummer</strong>
@@ -107,7 +115,7 @@ export default function LegalNotes() {
         sx={{
           top: "auto",
           bottom: 0,
-          boxShadow: "0px -5px 5px rgba(0, 131, 148, 0.3)"
+          boxShadow: "0px -5px 5px " + hexToRgbA(process.env.REACT_APP_PALETTE_PRIMARY_MAIN),
         }}
       >
         <Toolbar sx={{ justifyContent: "center", mt: 2 }}>
