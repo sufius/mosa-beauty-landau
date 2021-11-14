@@ -5,15 +5,15 @@ const theme = responsiveFontSizes(
   createTheme({
     palette: {
       primary: {
-        light: "#45288b",
-        main: "#0B005D",
-        dark: "#000034",
+        light: `${process.env.REACT_APP_ALETTE_PRIMARY_LIGHT}`,
+        main: `${process.env.REACT_APP_PALETTE_PRIMARY_MAIN}`,
+        dark: `${process.env.REACT_APP_PALETTE_PRIMARY_DARK}`,
         contrastText: "#fff"
       },
       secondary: {
-        light: "#6482ca",
-        main: "#305699",
-        dark: "#002e6a",
+        light: `${process.env.REACT_APP_PALETTE_SECONDARY_LIGHT}`,
+        main: `${process.env.REACT_APP_PALETTE_SECONDARY_MAIN}`,
+        dark: `${process.env.REACT_APP_PALETTE_SECONDARY_LIGHT}`,
         contrastText: "#fff"
       }
     },
@@ -35,8 +35,7 @@ const theme = responsiveFontSizes(
       MuiAppBar: {
         styleOverrides: {
           root: {
-            background: "linear-gradient(45deg, #0B005D 30%, #305699 90%)",
-            boxShadow: "0 3px 5px 2px rgba(11, 0, 93, 0.3)"
+            background: `linear-gradient(45deg, ${process.env.REACT_APP_PALETTE_PRIMARY_MAIN} 30%, ${process.env.REACT_APP_PALETTE_SECONDARY_MAIN} 90%)`,
           }
         }
       }

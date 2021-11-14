@@ -61,6 +61,19 @@ const defaultValues = {
   emailText: "",
 };
 
+const hexToRgbA = (hex, opacity = 0.3) => {
+    var c;
+    if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+        c= hex.substring(1).split('');
+        if(c.length === 3){
+            c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+        }
+        c= '0x'+c.join('');
+        return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',' + opacity + ')';
+    }
+    throw new Error('Bad Hex');
+};
+
 export default function Home() {
   const theme = useTheme();
   const matchMedium = useMediaQuery(theme.breakpoints.down("md"));
@@ -146,7 +159,7 @@ export default function Home() {
         </ListItem>
         {[
           "Start",
-          "Über uns",
+          "Über mich",
           "Dienstleistungen",
           "Bewertungen",
           "Kontakt",
@@ -174,6 +187,7 @@ export default function Home() {
         position="fixed"
         sx={{
           width: "100%",
+          boxShadow: "0 3px 5px 2px " + hexToRgbA(process.env.REACT_APP_PALETTE_PRIMARY_MAIN),
         }}
       >
         <Toolbar>
@@ -205,7 +219,7 @@ export default function Home() {
               TabIndicatorProps={{ style: { backgroundColor: "white" } }}
             >
               <Tab label="Start" value={"section_1"} />
-              <Tab label="Über uns" value={"section_2"} />
+              <Tab label="Über mich" value={"section_2"} />
               <Tab label="Dienstleistungen" value={"section_3"} />
               <Tab label="Bewertungen" value={"section_4"} />
               <Tab label="Kontakt" value={"section_5"} />
@@ -264,7 +278,7 @@ export default function Home() {
               align="center"
               sx={{ fontWeight: "light", mb: 0, mt: !matchMedium ? 6 : 4 }}
             >
-              ÜBER UNS
+              ÜBER MICH
             </Typography>
             <Grid container spacing={2} sx={{ mt: !matchMedium ? 1 : 0 }}>
               <Grid
@@ -291,12 +305,12 @@ export default function Home() {
               </Grid>
               <Grid item xs={12} md={6}>
                 <Typography paragraph align="justify">
-                  Mit ALALI-BAU sind wir als Familienunternehmen schon seit 10
-                  Jahren erfolgreich in der Baubranche tätig. Wir entwickeln für
-                  unsere Kunden maßgeschneiderte Lösungen rund um das Thema
-                  Bau-, Reparatur- und Montagearbeiten. Wir garantieren unseren
-                  Kunden eine individuelle Herangehensweise und ein auf ihn
-                  zugeschnittenes Angebot. Unser Ziel ist es einen bleibenden
+                  Mit MoSa Beauty bin ich schon seit mehreren
+                  Jahren erfolgreich in der Kosmetik und Beauty-Branche tätig.
+                  Ich entwickle für meine Kunden individuelle Lösungen unter
+                  Berücksichtigung aktueller Trends. Ich garantiere mit meinem
+                  Gespühr für eine individuelle Herangehensweise und ein auf mein
+                  Kunde zugeschnittenes Angebot. Mein Ziel ist es einen bleibenden
                   und positiven Eindruck zu hinterlassen.
                 </Typography>
                 <Card
@@ -315,17 +329,19 @@ export default function Home() {
                   />
                 </Card>
                 <Typography paragraph align="justify">
-                  Unser Unternehmen asphaltiert seit etwa zehn Jahren Straßen
-                  regional und überregional und hat sich auf dem Markt für die
-                  damit verbundenen Dienstleistungen einen tadellosen Ruf
-                  erarbeitet. Für uns gibt es keine kleinen oder unmöglichen
-                  Aufträge: Wir übernehmen den Bau von Straßen - unabhängig vom
-                  Bestimmungsort - sowie deren Reparatur. Wir bieten unseren
-                  Kunden ein breites Portfolio an Dienstleistungen. So bieten
-                  wir beispielsweise Arbeiten als Asphaltierier,
-                  Betonbohrer/-schneider, Bodenleger, Einbauer genormter
-                  Baufertigteile, Fuger, Holz-/Bautenschützer, Kabelverleger,
-                  Rohr-/Kanalreiniger und Arbeiten zur Bautentrocknung an.
+                  Als Kleinunternehmerin berate und lorem ipsum dolor sit amet,
+                  consetetur sadipscing elitr. Lorem ipsum dolor sit amet,
+                  consetetur sadipscing elitr Lorem ipsum dolor sit amet,
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                  Lorem ipsum.
                 </Typography>
               </Grid>
             </Grid>
@@ -341,188 +357,60 @@ export default function Home() {
               DIENSTLEISTUNGEN
             </Typography>
             <Grid container spacing={4} sx={{ mt: 0 }}>
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={5}>
                 <Typography
                   variant="h6"
                   component="h2"
                   gutterBottom
                   align="center"
                 >
-                  ASPHALTIERUNG
+                  HAARENTFERNUNG
                 </Typography>
                 <Typography align="justify">
-                  Die Asphaltierung ist ein moderner Ansatz zur Verbesserung von
-                  Straßen und Gehwegen. Es ist eine Aufgabe, die keine Fehler
-                  duldet. So ist beispielsweise der Einbau von Heißasphalt mit
-                  einer strikten Einhaltung der Technik verbunden, da eine
-                  Mischung schnell auskühlt. Dies bedeutet, dass es zügig und
-                  exakt auf den vorbereiteten Untergrund verlegt werden muss, da
-                  sonst der Asphalteinbau unnötige Kosten und mehr Zeit in
-                  Anspruch nimmt.
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                 </Typography>
               </Grid>
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={2}>
+              </Grid>
+              <Grid item xs={12} md={5}>
                 <Typography
                   variant="h6"
                   component="h2"
                   gutterBottom
                   align="center"
                 >
-                  BAUTENTROCKNUNG
+                  WIMPERN
                 </Typography>
                 <Typography align="justify">
-                  Wir sind Experten für die Entfeuchtung und Trocknung von
-                  Wänden und Räumen. Wir arbeiten mit beliebigen Objekten:
-                  Wohnungen, Privathäuser, Büros, Produktionsräume, Dächer,
-                  Keller, Sockel usw. Im Laufe der Jahre haben wir umfangreiche
-                  Erfahrung für schnelle Lösungen im Fall einer Überschwemmung
-                  oder bei der Bildung von Schimmel gesammelt. Für jeden
-                  konkreten Fall wählen wir eine effiziente Lösung, damit die
-                  Entfeuchtung zu 100% effektiv ist.
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                 </Typography>
               </Grid>
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={5}>
                 <Typography
                   variant="h6"
                   component="h2"
                   gutterBottom
                   align="center"
                 >
-                  BETONBOHREN UND -SCHNEIDEN
+                  AUGENBRAUEN
                 </Typography>
                 <Typography align="justify">
-                  Wenn in Stein, Mauerwerk, Beton und Stahlbeton effiziert
-                  geborhrt werden soll, ist es unabdinglich Sägeblätter mit
-                  Diamantbesetzung einzusetzen. Das Bohren mit Diamantbohrern
-                  ist bei jeder Dicke von Wänden, Bodenplatten oder Fundamenten
-                  möglich. Zudem bieten wir mittels Nassverfahren und
-                  entsprechender Saugvorrichtung eine staubfreie Umsetzung. Was
-                  auch immer die anstehende Aufgabe ist, wir bieten etablierte
-                  Wege, diese zu lösen.
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                 </Typography>
               </Grid>
-              <Grid item xs={12} md={4}>
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  gutterBottom
-                  align="center"
-                >
-                  BODENBELAGSARBEITEN
-                </Typography>
-                <Typography align="justify">
-                  Eine Bodenverlegung ist eine verantwortungsvolle Aufgabe, die
-                  am besten gleich von Profis erledigt wird. Die Behaglichkeit
-                  und der Komfort des Wohnens sowie die Lebensdauer des Bodens
-                  hängen von der Qualität der ausgeführten Umsetzung ab. Wir
-                  bieten einen Service für die Verlegung und Reparatur von
-                  Bodenbelägen wie beispielsweise Laminat, Parkett, Linoleum,
-                  Quarz-Vinyl-Fliesen und Teppich. Wir führen die Arbeiten
-                  qualitativ hochwertig und im vereinbarten Zeitrahmen aus.
-                </Typography>
+              <Grid item xs={12} md={2}>
               </Grid>
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={5}>
                 <Typography
                   variant="h6"
                   component="h2"
                   gutterBottom
                   align="center"
                 >
-                  MONTAGESERVICE
+                  GESICHTSBEHANDLUNG
                 </Typography>
                 <Typography align="justify">
-                  Eine professionelle Montage von Fenstern, Türen, Zargen und
-                  Regalen erfordert das Heranziehen eines hochqualifizierten
-                  Spezialisten mit langjähriger Erfahrung. Denn die Stille und
-                  Wärme im Haus hängen eben von der Qualität solcher
-                  Einbauarbeiten ab. Egal ob Fenster, Fensterbänke, Türen oder
-                  Geländer, wir bieten Ihnen einen hochwertigen und
-                  vielschichtigen Einbau und sorgen somit für einen erhöhten
-                  Wohnkomfort, der sich bezahlt macht.
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={4}>
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  gutterBottom
-                  align="center"
-                >
-                  VERFUGEN
-                </Typography>
-                <Typography align="justify">
-                  Wir bieten ein Ausfüllen und Abdichten von Fugen im Mauerwerk
-                  zwischen Betonbauteilen und Fassadenteilen, sowie bei
-                  Fenster-, Balkon- und Terrassenabdichtungen an. Eine
-                  Abdichtung erfolgt in der Regel mit spritzbaren,
-                  dauerelastischen Dehnungsdichtstoffen, wie beispielsweise
-                  Silikon und Acryl. Verfugmassen wie Zement und Mörtel setzen
-                  wir beispielsweise beim Verfugen von Sichtmauerwerk ein.
-                  Diesen Dienst bieten wir sowohl bei einer Erstverfugung in neu
-                  errichteten Gebäuden als auch bei einer Gebäudesanierung an.
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={4}>
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  gutterBottom
-                  align="center"
-                >
-                  HOLZ- UND BAUTENSCHUTZ
-                </Typography>
-                <Typography align="justify">
-                  Holz ist ein dem Menschen vertrauter Naturstoff, daher fühlt
-                  man sich in einem Holzhaus am wohlsten. Jedoch hat es zwar
-                  neben den unbestrittenen Vorteilen auch eine Reihe von
-                  Nachteilen: Es brennt leicht und ist auch anfällig für die
-                  Auswirkungen von Pilzen, Bakterien, Schimmelpilzen,
-                  Insektenschädlingen usw. Gerade deshalb ist eine Beschichtung
-                  der Oberflächen mit verschiedenen Schutzmitteln unabdinglich.
-                  Dieses Problem lösen wir mit Hilfe von Imprägnierungen und
-                  Verbindungen.
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={4}>
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  gutterBottom
-                  align="center"
-                >
-                  KABELVERLEGUNG
-                </Typography>
-                <Typography align="justify">
-                  Eine Kabelverlegung gehört zweifelsohne zu den
-                  sicherheitskritischen Aufgaben und erfordert daher das
-                  Heranziehen eines hochqualifizierten Spezialisten mit
-                  langjähriger Erfahrung. Und genau diese Erfahrung bringen wir
-                  mit. So bieten wir eine Verlegung und Installation von Kabeln
-                  und Kabelkanälen an. Hierbei ist eine der Phasen beim Verlegen
-                  von Freileitungen und Kabelstromleitungen die Installation von
-                  Drähten auf zuvor aufgestellten Stützen. Dabei führen unsere
-                  Spezialisten diese Arbeiten unter Berücksichtigung aktueller
-                  Industriestandards durch.
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={4}>
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  gutterBottom
-                  align="center"
-                >
-                  ROHR- UND KANALREINIGUNG
-                </Typography>
-                <Typography align="justify">
-                  Wir bieten eine hochwertige Reinigung und Spülung des
-                  Abwassersystems, der Rohrleitungen, der Heizungen und der
-                  Leitungen für die Wasserversorgung. Dabei verwenden wir
-                  hydrodynamische und mechanische Methoden. Eine leistungsstarke
-                  Pumpe, die nicht nur Flüssigkeit, sondern auch
-                  Schlammablagerungen abpumpt findet dabei Einsatz. Bei Bedarf
-                  bieten wir auch eine Videoaufnahme von den Abschnitten des
-                  Kanalnetzes an.
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                 </Typography>
               </Grid>
             </Grid>
@@ -569,9 +457,7 @@ export default function Home() {
                 <Card>
                   <CardHeader
                     title="Kontakt formular"
-                    subheader="Kontaktieren Sie uns jetzt! Wir rufen Sie umgehend zurück und bemühen uns
-                  all Ihre Fragen zu beantworten. Anschließend erstellen wir
-                  Ihnen ein individuelles Angebot."
+                    subheader="Kontaktieren Sie mich jetzt! Ich rufen Sie umgehend zurück und werde versuchen all Ihre Fragen zu beantworten. Anschließend erstelle Ihnen ein individuelles Angebot."
                     sx={{
                       pb: 0,
                     }}
@@ -680,7 +566,7 @@ export default function Home() {
         sx={{
           flexGrow: 1,
           mt: 4,
-          boxShadow: "0px -5px 5px rgba(11, 0, 93, 0.3)",
+          boxShadow: "0px -5px 5px " + hexToRgbA(process.env.REACT_APP_PALETTE_PRIMARY_MAIN),
         }}
       >
         <AppBar position="static">
@@ -768,28 +654,85 @@ export default function Home() {
                 <Typography align="center" sx={{ pb: 2, fontWeight: "light" }}>
                   {process.env.REACT_APP_OWNER_NAME}
                 </Typography>
-                <Typography
-                  variant="overline"
-                  component="p"
-                  align="center"
-                  sx={{ fontWeight: "bold", lineHeight: 1.3 }}
-                >
-                  Handwerkskammer <br />
-                  Betriebsnummer:
-                </Typography>
-                <Typography
-                  component="p"
-                  align="center"
-                  sx={{
-                    pb: matchSmall ? 3 : 2,
-                    fontWeight: "light",
-                    borderBottom: matchSmall
-                      ? "1px solid rgba(255, 255, 255, 0.4)"
-                      : "",
-                  }}
-                >
-                  {process.env.REACT_APP_OWNER_HWK}
-                </Typography>
+                { process.env.REACT_APP_OWNER_HWK ? (
+                  <>
+                    <Typography
+                      variant="overline"
+                      component="p"
+                      align="center"
+                      sx={{ fontWeight: "bold", lineHeight: 1.3 }}
+                    >
+                      Handwerkskammer <br />
+                      Betriebsnummer:
+                    </Typography>
+                    <Typography
+                      component="p"
+                      align="center"
+                      sx={{
+                        pb: matchSmall ? 3 : 2,
+                        fontWeight: "light",
+                        borderBottom: matchSmall
+                        ? "1px solid rgba(255, 255, 255, 0.4)"
+                        : "",
+                      }}
+                    >
+                      {process.env.REACT_APP_OWNER_HWK}
+                    </Typography>
+                  </>) : null}
+                { process.env.REACT_APP_INSTAGRAM ? (
+                  <>
+                    <Typography
+                      variant="overline"
+                      component="p"
+                      align="center"
+                      sx={{ fontWeight: "bold", lineHeight: 1.3 }}
+                    >
+                      Instagram:
+                    </Typography>
+                    <Link
+                      to={{ pathname: `https://www.instagram.com/${process.env.REACT_APP_INSTAGRAM}/`}}
+                      target="_blank" rel="noopener noreferrer"
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        color: "inherit",
+                        textDecoration: "inherit",
+                        paddingBottom: matchSmall ? 3 * parseInt(theme.spacing()) + "px" : 2 * parseInt(theme.spacing()) + "px",
+                        borderBottom: matchSmall
+                        ? "1px solid rgba(255, 255, 255, 0.4)"
+                        : "",
+                      }}
+                    >
+                      {process.env.REACT_APP_INSTAGRAM}
+                    </Link>
+                  </>) : null}
+                { process.env.REACT_APP_FACEBOOK ? (
+                  <>
+                    <Typography
+                      variant="overline"
+                      component="p"
+                      align="center"
+                      sx={{ fontWeight: "bold", lineHeight: 1.3 }}
+                    >
+                      Facebook:
+                    </Typography>
+                    <Link
+                      to={{ pathname: `https://www.facebook.com/${process.env.REACT_APP_FACEBOOK}/`}}
+                      target="_blank" rel="noopener noreferrer"
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        color: "inherit",
+                        textDecoration: "inherit",
+                        paddingBottom: matchSmall ? 3 * parseInt(theme.spacing()) + "px" : 2 * parseInt(theme.spacing()) + "px",
+                        borderBottom: matchSmall
+                        ? "1px solid rgba(255, 255, 255, 0.4)"
+                        : "",
+                      }}
+                    >
+                      {process.env.REACT_APP_FACEBOOK}
+                    </Link>
+                  </>) : null}
               </Grid>
               <Grid item xs={12} sm={4}>
                 <Typography
