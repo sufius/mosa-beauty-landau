@@ -13,7 +13,7 @@ const theme = responsiveFontSizes(
       secondary: {
         light: `${process.env.REACT_APP_PALETTE_SECONDARY_LIGHT}`,
         main: `${process.env.REACT_APP_PALETTE_SECONDARY_MAIN}`,
-        dark: `${process.env.REACT_APP_PALETTE_SECONDARY_LIGHT}`,
+        dark: `${process.env.REACT_APP_PALETTE_SECONDARY_DARK}`,
         contrastText: "#fff"
       }
     },
