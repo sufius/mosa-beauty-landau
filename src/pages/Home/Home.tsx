@@ -297,9 +297,10 @@ export default function Home() {
                   Jahren erfolgreich in der Kosmetik und Beauty-Branche tätig.
                   Ich entwickle für meine Kunden individuelle Lösungen unter
                   Berücksichtigung aktueller Trends. Ich garantiere mit meinem
-                  Gespür für die passende Perspektive für eine individuelle
-                  Herangehensweise und ein auf meinem Kunden zugeschnittenes Angebot.
-                  Mein Ziel ist es einen bleibenden und positiven Eindruck zu hinterlassen.
+                  Gespür für passende Perspektiven und meiner individuellen
+                  Herangehensweise für ein auf mein Kunde zugeschnittenes
+                  Angebot. Mein Ziel ist es einen bleibenden und
+                  positiven Eindruck zu hinterlassen.
                 </Typography>
                 <Card
                   sx={{
