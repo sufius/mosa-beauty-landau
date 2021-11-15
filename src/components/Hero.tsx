@@ -61,7 +61,7 @@ export default function Hero({ onChange }: HeroProps) {
             sx={{ pb: matchSmall ? 2 : matchMedium ? 3 : 4, textShadow: "2px 2px 1px rgba(0, 0, 0, 0.8)" }}
             textAlign="center"
           >
-            {process.env.REACT_APP_SITE_HERO_TITLE_PART_1}<br/>
+            {process.env.REACT_APP_SITE_HERO_TITLE_PART_1}<br />
             {process.env.REACT_APP_SITE_HERO_TITLE_PART_2}
           </Typography>
           <Button

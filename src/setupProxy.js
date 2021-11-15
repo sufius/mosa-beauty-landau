@@ -2,10 +2,14 @@
 const nodemailer = require("nodemailer");
 var bodyParser = require("body-parser");
 const path = require("path");
-const { body } = require("express-validator");
+const {
+  body
+} = require("express-validator");
 const sendMail = require(path.join(__dirname, "..", "scripts", "sendMail"));
 
-require("dotenv").config({ path: '.env.local' });
+require("dotenv").config({
+  path: '.env.local'
+});
 
 // this is used just in mode: NODE_ENV === "development"
 module.exports = function(app) {
@@ -19,7 +23,9 @@ module.exports = function(app) {
   app.post(
     "/request/quotation",
     body("name").not().isEmpty().trim().escape(),
-    body("email").not().isEmpty().trim().isEmail().normalizeEmail({ gmail_remove_dots: false}),
+    body("email").not().isEmpty().trim().isEmail().normalizeEmail({
+      gmail_remove_dots: false
+    }),
     body("mobile").not().isEmpty().trim().escape(),
     body("emailText").not().isEmpty().trim().escape(),
     (req, res) => {
@@ -34,7 +40,7 @@ module.exports = function(app) {
       let mobile = req.body.mobile;
       let emailText = req.body.emailText;
       if (!name || !email || !mobile || !emailText) {
-          res.sendStatus(500);
+        res.sendStatus(500);
       } else {
         sendMail(name, email, mobile, emailText).then(() => {
           res.sendStatus(200);

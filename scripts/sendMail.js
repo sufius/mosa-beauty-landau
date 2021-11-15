@@ -1,7 +1,9 @@
 "use strict";
 const nodemailer = require("nodemailer");
 
-require("dotenv").config({ path: ".env.local" });
+require("dotenv").config({
+  path: ".env.local"
+});
 
 // async..await is not allowed in global scope, must use a wrapper
 module.exports = function(name, email, mobile, emailText) {

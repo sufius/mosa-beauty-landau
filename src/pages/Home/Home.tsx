@@ -520,12 +520,12 @@ export default function Home() {
                         melden.
                       </Alert>
                     ) : (
-                      <Alert severity="error">
-                        Ihre Nachricht konnte nicht gesendet werden! Bitte
-                        versuchen Sie es entweder zu einem späteren Zeitpunkt
-                        noch einmal oder telefonisch.
+                          <Alert severity="error">
+                            Ihre Nachricht konnte nicht gesendet werden! Bitte
+                            versuchen Sie es entweder zu einem späteren Zeitpunkt
+                            noch einmal oder telefonisch.
                       </Alert>
-                    )}
+                        )}
                   </CardContent>
                   {submitted === undefined ? (
                     <CardActions
@@ -643,7 +643,7 @@ export default function Home() {
                 <Typography align="center" sx={{ pb: 2, fontWeight: "light" }}>
                   {process.env.REACT_APP_OWNER_NAME}
                 </Typography>
-                { process.env.REACT_APP_OWNER_HWK ? (
+                {process.env.REACT_APP_OWNER_HWK ? (
                   <>
                     <Typography
                       variant="overline"
@@ -661,14 +661,14 @@ export default function Home() {
                         pb: matchSmall ? 3 : 2,
                         fontWeight: "light",
                         borderBottom: matchSmall
-                        ? "1px solid rgba(255, 255, 255, 0.4)"
-                        : "",
+                          ? "1px solid rgba(255, 255, 255, 0.4)"
+                          : "",
                       }}
                     >
                       {process.env.REACT_APP_OWNER_HWK}
                     </Typography>
                   </>) : null}
-                { process.env.REACT_APP_INSTAGRAM ? (
+                {process.env.REACT_APP_INSTAGRAM ? (
                   <>
                     <Typography
                       variant="overline"
@@ -679,7 +679,7 @@ export default function Home() {
                       Instagram:
                     </Typography>
                     <Link
-                      to={{ pathname: `https://www.instagram.com/${process.env.REACT_APP_INSTAGRAM}/`}}
+                      to={{ pathname: `https://www.instagram.com/${process.env.REACT_APP_INSTAGRAM}/` }}
                       target="_blank" rel="noopener noreferrer"
                       style={{
                         display: "flex",
@@ -692,7 +692,7 @@ export default function Home() {
                       {process.env.REACT_APP_INSTAGRAM}
                     </Link>
                   </>) : null}
-                { process.env.REACT_APP_FACEBOOK ? (
+                {process.env.REACT_APP_FACEBOOK ? (
                   <>
                     <Typography
                       variant="overline"
@@ -703,7 +703,7 @@ export default function Home() {
                       Facebook:
                     </Typography>
                     <Link
-                      to={{ pathname: `https://www.facebook.com/${process.env.REACT_APP_FACEBOOK}/`}}
+                      to={{ pathname: `https://www.facebook.com/${process.env.REACT_APP_FACEBOOK}/` }}
                       target="_blank" rel="noopener noreferrer"
                       style={{
                         display: "flex",
@@ -712,8 +712,8 @@ export default function Home() {
                         textDecoration: "inherit",
                         paddingBottom: matchSmall ? 3 * parseInt(theme.spacing()) + "px" : 2 * parseInt(theme.spacing()) + "px",
                         borderBottom: matchSmall
-                        ? "1px solid rgba(255, 255, 255, 0.4)"
-                        : "",
+                          ? "1px solid rgba(255, 255, 255, 0.4)"
+                          : "",
                       }}
                     >
                       {process.env.REACT_APP_FACEBOOK}

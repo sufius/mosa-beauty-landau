@@ -5,10 +5,14 @@ const http = require("http");
 const https = require("https");
 const fs = require("fs");
 const bodyParser = require("body-parser");
-const { body } = require("express-validator");
+const {
+  body
+} = require("express-validator");
 const sendMail = require("./sendMail");
 
-require("dotenv").config({ path: ".env.local" });
+require("dotenv").config({
+  path: ".env.local"
+});
 
 const app = express();
 
@@ -26,17 +30,19 @@ const sslOptions = process.env.HTTPS === "true" && {
 function requireHTTPS(req, res, next) {
   // The 'x-forwarded-proto' check is for Heroku
   if (!req.secure &&
-      req.get('x-forwarded-proto') !== 'https' &&
-      process.env.NODE_ENV !== "development" &&
-      process.env.NODE_ENV !== "dev") {
-        return res.redirect('https://' + req.headers.host + req.url);
+    req.get('x-forwarded-proto') !== 'https' &&
+    process.env.NODE_ENV !== "development" &&
+    process.env.NODE_ENV !== "dev") {
+    return res.redirect('https://' + req.headers.host + req.url);
   }
   next();
 }
 app.use(requireHTTPS);
 
 // Serve any static files
-app.use(express.static(path.join(__dirname, "..", "build"), { dotfiles: 'allow' }));
+app.use(express.static(path.join(__dirname, "..", "build"), {
+  dotfiles: 'allow'
+}));
 app.use(bodyParser.json()); // to support JSON-encoded bodies
 app.use(
   bodyParser.urlencoded({
@@ -47,7 +53,9 @@ app.use(
 
 app.post("/request/quotation",
   body("name").not().isEmpty().trim().escape(),
-  body("email").not().isEmpty().trim().isEmail().normalizeEmail({ gmail_remove_dots: false }),
+  body("email").not().isEmpty().trim().isEmail().normalizeEmail({
+    gmail_remove_dots: false
+  }),
   body("mobile").not().isEmpty().trim().escape(),
   body("emailText").not().isEmpty().trim().escape(),
   (req, res) => {
@@ -63,22 +71,22 @@ app.post("/request/quotation",
     let emailText = req.body.emailText;
     if (!name || !email || !mobile || !emailText) {
       res.sendStatus(500);
-  } else {
-    sendMail(name, email, mobile, emailText)
-      .then(() => {
-        res.sendStatus(200);
-      })
-      .catch(err => {
-        if (
-          process.env.NODE_ENV === "development" ||
-          process.env.NODE_ENV === "dev"
-        ) {
-          console.error(err);
-        }
-        res.status(500).send(err);
-      });
-  }
-});
+    } else {
+      sendMail(name, email, mobile, emailText)
+        .then(() => {
+          res.sendStatus(200);
+        })
+        .catch(err => {
+          if (
+            process.env.NODE_ENV === "development" ||
+            process.env.NODE_ENV === "dev"
+          ) {
+            console.error(err);
+          }
+          res.status(500).send(err);
+        });
+    }
+  });
 
 // Handle React routing, return all requests to landing page
 app.get("/*", function(req, res) {

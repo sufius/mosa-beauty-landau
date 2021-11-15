@@ -92,7 +92,7 @@ export default function LegalNotes() {
                   {process.env.REACT_APP_OWNER_HWK}
                 </Typography>
               </>
-            ) : null }
+            ) : null}
 
             <Typography variant="caption">
               <strong>Telefonnummer</strong>
