@@ -298,8 +298,8 @@ export default function Home() {
                   Ich entwickle für meine Kunden individuelle Lösungen unter
                   Berücksichtigung aktueller Trends. Ich garantiere mit meinem
                   Gespür für passende Perspektiven und meiner individuellen
-                  Herangehensweise für ein auf mein Kunde zugeschnittenes
-                  Angebot. Mein Ziel ist es einen bleibenden und
+                  Herangehensweise für auf meine Kunden zugeschnittene
+                  Angebote. Mein Ziel ist es einen bleibenden und
                   positiven Eindruck zu hinterlassen.
                 </Typography>
                 <Card
