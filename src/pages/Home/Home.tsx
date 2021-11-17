@@ -371,7 +371,21 @@ export default function Home() {
                   WIMPERN
                 </Typography>
                 <Typography align="justify">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                  Es ist endlich an der Zeit die Gesundheit und Schönheit
+                  ihrer Wimpern der Welt zu zeigen! Am besten geschieht das mit einer
+                  professionellen Laminierung ihrer Wimpern. Die Wimpernlaminierung ist eine
+                  neue und luxuriöse Behandlung der Wimpern. Das Wimpernlifting
+                  mit Laminierung ist die beste Alternative zur Wimpernverlängerung.
+                  Im Anschluss werden die Wimpern (auf Wunsch) gefärbt und mit einem
+                  Vitaminkomplex gepflegt, was den Effekt zusätzlich verstärkt.
+                  Am effektivsten ist eine Laminierung durch eine weiterführende Behandlung,
+                  bei der spezielle Wirkstoffe in Verbindung mit der Laminierung in der Wimper
+                  bleibt und der Effekt sogar bis zu 8 Wochen anhalten kann, statt den üblichen 4 bis 6 Wochen.
+                  Die Wimpern sehen nach der ersten Behandlung voluminöser, länger und
+                  gesünder aus. Mit Wimpernlifting musst du dir keine Sorgen machen,
+                  dass falsche Wimpern abfallen, wenn du dir mal die Augen reibst
+                  oder zu Mascara greifst. Zudem ist die Anwendung Risikofrei was
+                  Allergien angeht, denn es ist zu 100% aus natürlichen Inhaltsstoffen.
                 </Typography>
               </Grid>
               <Grid item xs={12} md={5}>
