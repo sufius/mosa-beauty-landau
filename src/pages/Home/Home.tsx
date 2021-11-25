@@ -413,8 +413,23 @@ export default function Home() {
                   GESICHTSBEHANDLUNG
                 </Typography>
                 <Typography align="justify">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                  Die apparative Kosmetik ermöglicht Behandlungsmöglichkeiten auf einem ganz hohen Niveau. Dazu gehört das Aquafacial – auch bekannt als Hydrafacial. Es ist eine einzigartige Gesichtsbehandlung, bei der alle Hauttypen und Hautstrukturen effektiv behandelt werden. Dabei wird die Haut gereinigt, geglättet und mit Feuchtigkeit versorgt und beginnt somit wieder zu strahlen. Zu den Vorteilen gehören:
                 </Typography>
+                <ul className="list">
+                  <li>Sichtbare Ergebnisse bereits nach wenigen Tagen</li>
+                  <li>Weiche und strahlende Haut nach schon einer Anwendung</li>
+                  <li>Porentiefe Reinigung komponiert mit tiefgreifender Hydratisierung</li>
+                  <li>Die Hautgesundheit wird verbessert</li>
+                  <li>Reduziert fettige und verstopfte Haut</li>
+                  <li>Das Hautbild wirkt ebenmäßiger</li>
+                  <li>Fortgeschrittene Alterserscheinungen werden gemildert</li>
+                  <li>Reduziert Hyperpigmentierung und Sonnenschäden</li>
+                  <li>Anregung der Mikrozirkulation der Haut</li>
+                  <li>Keine Ausfallzeit und Nebenwirkungen</li>
+                  <li>Wissenschaftlich nachgewiesene Wirksamkeit</li>
+                  <li>Die Elastizität und Straffheit der Haut wird erhöht</li>
+                  <li>Erfolgreicher Einsatz in der Rosazea-Therapie</li>
+                </ul>
               </Grid>
             </Grid>
           </Element>
