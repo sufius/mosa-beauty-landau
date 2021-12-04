@@ -293,8 +293,8 @@ export default function Home() {
               </Grid>
               <Grid item xs={12} md={6}>
                 <Typography paragraph align="justify">
-                  Mit MoSa Beauty bin ich schon seit mehreren
-                  Jahren erfolgreich in der Kosmetik und Beauty-Branche tätig.
+                  Mit MoSa Beauty bin ich schon seit einem Jahr erfolgreich in
+                  der Kosmetik und Beauty-Branche tätig.
                   Ich entwickle für meine Kunden individuelle Lösungen unter
                   Berücksichtigung aktueller Trends. Ich garantiere mit meinem
                   Gespür für passende Perspektiven und meiner individuellen
