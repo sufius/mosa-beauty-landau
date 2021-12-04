@@ -353,10 +353,16 @@ export default function Home() {
                   gutterBottom
                   align="center"
                 >
-                  HAARENTFERNUNG
+                  PHOTOEPILATION, DAUERHAFTE HAARENTFERNUNG
                 </Typography>
                 <Typography align="justify">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                  Wir verwenden für eine Haarentfernung das IP-System. Im IP-System werden mit Hilfe von hochenergetischen Xenonlampen hochkonzentrierte Lichtblitze auf die zu behandelnden Haaransätze geschossen. Das intensiv pulsierende Licht heizt den selektierten Haarschaft auf und führt somit zu einer Auflösung der Wachstumszone des Haares. Angepasst an Hauttyp, Haarstruktur und Haarfarbe wird das Wellenlängenspektrum gefiltert und entfernt somit, je nach Hauttyp, Haarfarbe (schwarz, braun, blond), Körperregion und Haardichte, die behandelten Haare. Eine vollständige Behandlung besteht in der Regel aus mehreren Sitzungen, welche individuell festgelegt werden und stark von der Hautpartie und Haarstruktur abhängt. Zu gering pigmentierte (zum Beispiel graue) Haare und Vellushaare (Flaum) können grundsätzlich nicht mit der Photoepilation entfernt werden, da ihnen das Pigment Melanin fehlt, was jedoch für eine Absorbierung von Licht nötig ist.
+                  <br/>
+                  <br/>
+                  Bei einem Teil der behandelten Haare ist ein sofortiger Wachstumsstop zu erkennen. Das liegt daran, dass die Haarwurzeln teilweise so stark geschädigt wurden, so dass die noch verbliebenen Haarreste irgendwann nach etwa 8 bis 14 Tagen ihren halt verlieren und ausfallen.
+                  <br/>
+                  <br/>
+                  Es sind in jedem Fall mehrere Behandlungen erforderlich, da Haare in unterschiedlichen Zyklen wachsen und nur in ihrer Wachstumsphase (Anagenphase), nicht aber in der Ruhephase (Telogenphase) durch Photoepilation beseitigt werden können. Folgebehandlungen sollten im Abstand von etwa 4 bis höchstens 8 Wochen vereinbart werden. Sollte der empfohlene Zeitabstand überschritten werden, sind keine angemessenen Ergebnisse zu erwarten.
                 </Typography>
               </Grid>
               <Grid item xs={12} md={2}>
@@ -395,10 +401,27 @@ export default function Home() {
                   gutterBottom
                   align="center"
                 >
-                  AUGENBRAUEN
+                  HAUTVERJÜNGUNG
                 </Typography>
                 <Typography align="justify">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                  Microneedling PhiBright ist eine Weiterentwicklung der Mikronadel-Technik, welche eine personalisierte Behandlung unter Berücksichtigung individueller Bedürfnisse der verschiedenen Hauttypen und -bedingungen anbietet.
+                  <br/>
+                  <br/>
+                  Eine Palette von 15 verschiedenen PhiBright-Sera ermöglicht eine individuelle Behandlung und einen von der Art und des Zustands der zu behandelnden Haut abhängigen Ansatz.
+                  <br/>
+                  <br/>
+                  Durch die individuelle Beratung und der gemeinsamen Analyse des Hauttyps, wird mit Hilfe etablierter Berechnungsmethoden ein geeignetes Serum ermittelt. Ein solches Serum dient nicht nur zur Verjüngung der Haut, sondern auch bei folgenden Anwendungsfällen:
+                  <ul>
+                    <li>Falten</li>
+                    <li>dehydrierte Haut</li>
+                    <li>fettige und problematische Haut</li>
+                    <li>Hyperpigmentierung</li>
+                    <li>Narben</li>
+                    <li>Aknenarben</li>
+                    <li>vergrößerte Poren</li>
+                    <li>Dehnungsstreifen</li>
+                    <li>Alopezie</li>
+                  </ul>
                 </Typography>
               </Grid>
               <Grid item xs={12} md={2}>
@@ -415,7 +438,7 @@ export default function Home() {
                 <Typography align="justify">
                   Die apparative Kosmetik ermöglicht Behandlungsmöglichkeiten auf einem ganz hohen Niveau. Dazu gehört das Aquafacial – auch bekannt als Hydrafacial. Es ist eine einzigartige Gesichtsbehandlung, bei der alle Hauttypen und Hautstrukturen effektiv behandelt werden. Dabei wird die Haut gereinigt, geglättet und mit Feuchtigkeit versorgt und beginnt somit wieder zu strahlen. Zu den Vorteilen gehören:
                 </Typography>
-                <ul className="list">
+                <ul>
                   <li>Sichtbare Ergebnisse bereits nach wenigen Tagen</li>
                   <li>Weiche und strahlende Haut nach schon einer Anwendung</li>
                   <li>Porentiefe Reinigung komponiert mit tiefgreifender Hydratisierung</li>
