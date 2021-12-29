@@ -180,7 +180,7 @@ export default function Home() {
       >
         <Toolbar>
           <Link
-            style={{ color: "inherit", textDecoration: "inherit" }}
+            style={{ color: "inherit", textDecoration: "inherit", display: "contents" }}
             to="/"
             onClick={() => {
               handleChange("section_1");
@@ -191,7 +191,7 @@ export default function Home() {
                 verticalAlign: "bottom",
                 maxHeight: matchSmall ? 40 : 47,
               }}
-              src={matchSmall ? "/logo_white_small.png" : "/logo_white.png"}
+              src={"/logo_white.svg"}
               alt={`brand for ${process.env.REACT_APP_SITE_NAME}`}
             />
           </Link>
@@ -293,7 +293,7 @@ export default function Home() {
               </Grid>
               <Grid item xs={12} md={6}>
                 <Typography paragraph align="justify">
-                  Mit MoSa Beauty bin ich schon seit einem Jahr erfolgreich in
+                  Mit MoSa Beauty bin ich schon seit 2021 erfolgreich in
                   der Kosmetik und Beauty-Branche tätig.
                   Ich entwickle für meine Kunden individuelle Lösungen unter
                   Berücksichtigung aktueller Trends. Ich garantiere mit meinem
@@ -356,13 +356,10 @@ export default function Home() {
                   PHOTOEPILATION, DAUERHAFTE HAARENTFERNUNG
                 </Typography>
                 <Typography align="justify">
-                  Wir verwenden für eine Haarentfernung das IP-System. Im IP-System werden mit Hilfe von hochenergetischen Xenonlampen hochkonzentrierte Lichtblitze auf die zu behandelnden Haaransätze geschossen. Das intensiv pulsierende Licht heizt den selektierten Haarschaft auf und führt somit zu einer Auflösung der Wachstumszone des Haares. Angepasst an Hauttyp, Haarstruktur und Haarfarbe wird das Wellenlängenspektrum gefiltert und entfernt somit, je nach Hauttyp, Haarfarbe (schwarz, braun, blond), Körperregion und Haardichte, die behandelten Haare. Eine vollständige Behandlung besteht in der Regel aus mehreren Sitzungen, welche individuell festgelegt werden und stark von der Hautpartie und Haarstruktur abhängt. Zu gering pigmentierte (zum Beispiel graue) Haare und Vellushaare (Flaum) können grundsätzlich nicht mit der Photoepilation entfernt werden, da ihnen das Pigment Melanin fehlt, was jedoch für eine Absorbierung von Licht nötig ist.
+                  Wir verwenden für eine Haarentfernung das IP-System. Im IP-System werden mit Hilfe von hochenergetischen Xenonlampen hochkonzentrierte Lichtblitze auf die zu behandelnden Haaransätze geschossen. Das intensiv pulsierende Licht heizt den selektierten Haarschaft auf und führt somit zu einer Auflösung der Wachstumszone des Haares. Angepasst an Hauttyp, Haarstruktur und Haarfarbe wird das Wellenlängenspektrum gefiltert und entfernt somit, je nach Hauttyp, Haarfarbe (schwarz, braun, blond), Körperregion und Haardichte, die behandelten Haare. In der Regel ist ein sofortiger Wachstumsstop feststellbar, spätestens jedoch nach etwa 8 bis 14 Tagen.
                   <br/>
                   <br/>
-                  Bei einem Teil der behandelten Haare ist ein sofortiger Wachstumsstop zu erkennen. Das liegt daran, dass die Haarwurzeln teilweise so stark geschädigt wurden, so dass die noch verbliebenen Haarreste irgendwann nach etwa 8 bis 14 Tagen ihren halt verlieren und ausfallen.
-                  <br/>
-                  <br/>
-                  Es sind in jedem Fall mehrere Behandlungen erforderlich, da Haare in unterschiedlichen Zyklen wachsen und nur in ihrer Wachstumsphase (Anagenphase), nicht aber in der Ruhephase (Telogenphase) durch Photoepilation beseitigt werden können. Folgebehandlungen sollten im Abstand von etwa 4 bis höchstens 8 Wochen vereinbart werden. Sollte der empfohlene Zeitabstand überschritten werden, sind keine angemessenen Ergebnisse zu erwarten.
+                  Eine vollständige Behandlung besteht in der Regel aus mehreren Sitzungen, welche individuell festgelegt werden und stark von der Hautpartie und Haarstruktur abhängt. Das liegt hauptsächlich daran, dass Haare in unterschiedlichen Zyklen wachsen und nur in ihrer Wachstumsphase (Anagenphase), nicht aber in der Ruhephase (Telogenphase) durch Photoepilation beseitigt werden können. Folgebehandlungen sollten im Abstand von etwa 4 bis höchstens 8 Wochen vereinbart werden.
                 </Typography>
               </Grid>
               <Grid item xs={12} md={2}>
@@ -411,18 +408,18 @@ export default function Home() {
                   <br/>
                   <br/>
                   Durch die individuelle Beratung und der gemeinsamen Analyse des Hauttyps, wird mit Hilfe etablierter Berechnungsmethoden ein geeignetes Serum ermittelt. Ein solches Serum dient nicht nur zur Verjüngung der Haut, sondern auch bei folgenden Anwendungsfällen:
-                  <ul>
-                    <li>Falten</li>
-                    <li>dehydrierte Haut</li>
-                    <li>fettige und problematische Haut</li>
-                    <li>Hyperpigmentierung</li>
-                    <li>Narben</li>
-                    <li>Aknenarben</li>
-                    <li>vergrößerte Poren</li>
-                    <li>Dehnungsstreifen</li>
-                    <li>Alopezie</li>
-                  </ul>
                 </Typography>
+                <ul>
+                  <li>Falten</li>
+                  <li>dehydrierte Haut</li>
+                  <li>fettige und problematische Haut</li>
+                  <li>Hyperpigmentierung</li>
+                  <li>Narben</li>
+                  <li>Aknenarben</li>
+                  <li>vergrößerte Poren</li>
+                  <li>Dehnungsstreifen</li>
+                  <li>Alopezie</li>
+                </ul>
               </Grid>
               <Grid item xs={12} md={2}>
               </Grid>

@@ -23,13 +23,13 @@ export default function LegalNotes() {
         boxShadow: "0 3px 5px 2px " + hexToRgbA(process.env.REACT_APP_PALETTE_PRIMARY_MAIN)
       }}>
         <Toolbar>
-          <Link style={{ color: "inherit", textDecoration: "inherit" }} to="/">
+          <Link style={{ color: "inherit", textDecoration: "inherit", display: "contents" }} to="/">
             <img
               style={{
                 verticalAlign: "bottom",
                 maxHeight: matchSmall ? 40 : 47
               }}
-              src={matchSmall ? "/logo_white_small.png" : "/logo_white.png"}
+              src={"logo_white.svg"}
               alt={`brand for ${process.env.REACT_APP_SITE_NAME}`}
             />
           </Link>
