@@ -293,7 +293,7 @@ export default function Home() {
               </Grid>
               <Grid item xs={12} md={6}>
                 <Typography paragraph align="justify">
-                  Mit MoSa Beauty bin ich schon seit 2021 erfolgreich in
+                  Mit MoSa Beauty bin ich seit 2021 erfolgreich in
                   der Kosmetik und Beauty-Branche tätig.
                   Ich entwickle für meine Kunden individuelle Lösungen unter
                   Berücksichtigung aktueller Trends. Ich garantiere mit meinem
