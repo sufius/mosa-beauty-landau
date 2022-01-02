@@ -510,7 +510,7 @@ export default function Home() {
               sx={{
                 fontWeight: "light",
                 mb: !matchMedium ? 3 : 2,
-                mt: 5,
+                mt: !matchMedium ? 6 : 4,
               }}
             >
               BEWERTUNGEN
