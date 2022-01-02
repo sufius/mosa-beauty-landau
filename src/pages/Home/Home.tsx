@@ -346,138 +346,158 @@ export default function Home() {
               DIENSTLEISTUNGEN
             </Typography>
             <Grid container spacing={4} sx={{ mt: 0 }}>
-              <Grid item xs={12} md={5}>
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  gutterBottom
-                  align="center"
-                >
-                  PHOTOEPILATION, DAUERHAFTE HAARENTFERNUNG
-                </Typography>
-                <Typography align="justify">
-                  Wir verwenden für eine Haarentfernung das IP-System. Im IP-System werden mit Hilfe von hochenergetischen Xenonlampen hochkonzentrierte Lichtblitze auf die zu behandelnden Haaransätze geschossen. Das intensiv pulsierende Licht heizt den selektierten Haarschaft auf und führt somit zu einer Auflösung der Wachstumszone des Haares. Angepasst an Hauttyp, Haarstruktur und Haarfarbe wird das Wellenlängenspektrum gefiltert und entfernt somit, je nach Hauttyp, Haarfarbe (schwarz, braun, blond), Körperregion und Haardichte, die behandelten Haare. In der Regel ist ein sofortiger Wachstumsstop feststellbar, spätestens jedoch nach etwa 8 bis 14 Tagen.
-                  <br/>
-                  <br/>
-                  Eine vollständige Behandlung besteht in der Regel aus mehreren Sitzungen, welche individuell festgelegt werden und stark von der Hautpartie und Haarstruktur abhängt. Das liegt hauptsächlich daran, dass Haare in unterschiedlichen Zyklen wachsen und nur in ihrer Wachstumsphase (Anagenphase), nicht aber in der Ruhephase (Telogenphase) durch Photoepilation beseitigt werden können. Folgebehandlungen sollten im Abstand von etwa 4 bis höchstens 8 Wochen vereinbart werden.
-                </Typography>
+              <Grid item xs={12} md={6}>
+                <Card>
+                  <CardMedia
+                    component="img"
+                    image="/photoepilation.jpg"
+                    alt="photoepilation"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      PHOTOEPILATION, DAUERHAFTE HAARENTFERNUNG
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                    Wir verwenden für eine Haarentfernung das IP-System. Im IP-System werden mit Hilfe von hochenergetischen Xenonlampen hochkonzentrierte Lichtblitze auf die zu behandelnden Haaransätze geschossen. Das intensiv pulsierende Licht heizt den selektierten Haarschaft auf und führt somit zu einer Auflösung der Wachstumszone des Haares. Angepasst an Hauttyp, Haarstruktur und Haarfarbe wird das Wellenlängenspektrum gefiltert und entfernt somit, je nach Hauttyp, Haarfarbe (schwarz, braun, blond), Körperregion und Haardichte, die behandelten Haare. In der Regel ist ein sofortiger Wachstumsstop feststellbar, spätestens jedoch nach etwa 8 bis 14 Tagen.
+                    <br/>
+                    <br/>
+                    Eine vollständige Behandlung besteht in der Regel aus mehreren Sitzungen, welche individuell festgelegt werden und stark von der Hautpartie und Haarstruktur abhängt. Das liegt hauptsächlich daran, dass Haare in unterschiedlichen Zyklen wachsen und nur in ihrer Wachstumsphase (Anagenphase), nicht aber in der Ruhephase (Telogenphase) durch Photoepilation beseitigt werden können. Folgebehandlungen sollten im Abstand von etwa 4 bis höchstens 8 Wochen vereinbart werden.
+                    </Typography>
+                  </CardContent>
+                </Card>
               </Grid>
-              <Grid item xs={12} md={2}>
+              <Grid item xs={12} md={6}>
+                <Card>
+                  <CardMedia
+                    component="img"
+                    height="372"
+                    image="/eyelashes2.jpeg"
+                    alt="eyelashes"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      WIMPERN
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Es ist endlich an der Zeit die Gesundheit und Schönheit
+                      ihrer Wimpern der Welt zu zeigen! Am besten geschieht das mit einer
+                      professionellen Laminierung ihrer Wimpern. Die Wimpernlaminierung ist eine
+                      neue und luxuriöse Behandlung der Wimpern. Das Wimpernlifting
+                      mit Laminierung ist die beste Alternative zur Wimpernverlängerung.
+                      Im Anschluss werden die Wimpern (auf Wunsch) gefärbt und mit einem
+                      Vitaminkomplex gepflegt, was den Effekt zusätzlich verstärkt.
+                      Am effektivsten ist eine Laminierung durch eine weiterführende Behandlung,
+                      bei der spezielle Wirkstoffe in Verbindung mit der Laminierung in der Wimper
+                      bleibt und der Effekt sogar bis zu 8 Wochen anhalten kann, statt den üblichen 4 bis 6 Wochen.
+                      Die Wimpern sehen nach der ersten Behandlung voluminöser, länger und
+                      gesünder aus. Mit Wimpernlifting musst du dir keine Sorgen machen,
+                      dass falsche Wimpern abfallen, wenn du dir mal die Augen reibst
+                      oder zu Mascara greifst. Zudem ist die Anwendung Risikofrei was
+                      Allergien angeht, denn es ist zu 100% aus natürlichen Inhaltsstoffen.
+                    </Typography>
+                  </CardContent>
+                </Card>
               </Grid>
-              <Grid item xs={12} md={5}>
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  gutterBottom
-                  align="center"
-                >
-                  WIMPERN
-                </Typography>
-                <Typography align="justify">
-                  Es ist endlich an der Zeit die Gesundheit und Schönheit
-                  ihrer Wimpern der Welt zu zeigen! Am besten geschieht das mit einer
-                  professionellen Laminierung ihrer Wimpern. Die Wimpernlaminierung ist eine
-                  neue und luxuriöse Behandlung der Wimpern. Das Wimpernlifting
-                  mit Laminierung ist die beste Alternative zur Wimpernverlängerung.
-                  Im Anschluss werden die Wimpern (auf Wunsch) gefärbt und mit einem
-                  Vitaminkomplex gepflegt, was den Effekt zusätzlich verstärkt.
-                  Am effektivsten ist eine Laminierung durch eine weiterführende Behandlung,
-                  bei der spezielle Wirkstoffe in Verbindung mit der Laminierung in der Wimper
-                  bleibt und der Effekt sogar bis zu 8 Wochen anhalten kann, statt den üblichen 4 bis 6 Wochen.
-                  Die Wimpern sehen nach der ersten Behandlung voluminöser, länger und
-                  gesünder aus. Mit Wimpernlifting musst du dir keine Sorgen machen,
-                  dass falsche Wimpern abfallen, wenn du dir mal die Augen reibst
-                  oder zu Mascara greifst. Zudem ist die Anwendung Risikofrei was
-                  Allergien angeht, denn es ist zu 100% aus natürlichen Inhaltsstoffen.
-                </Typography>
+              <Grid item xs={12} md={6}>
+                <Card>
+                  <CardMedia
+                    component="img"
+                    height="373"
+                    image="/skin_rejuvenation.jpeg"
+                    alt="skin_rejuvenation"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      HAUTVERJÜNGUNG
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Microneedling PhiBright ist eine Weiterentwicklung der Mikronadel-Technik, welche eine personalisierte Behandlung unter Berücksichtigung individueller Bedürfnisse der verschiedenen Hauttypen und -bedingungen anbietet.
+                      <br/>
+                      <br/>
+                      Eine Palette von 15 verschiedenen PhiBright-Sera ermöglicht eine individuelle Behandlung und einen von der Art und des Zustands der zu behandelnden Haut abhängigen Ansatz.
+                      <br/>
+                      <br/>
+                      Durch die individuelle Beratung und der gemeinsamen Analyse des Hauttyps, wird mit Hilfe etablierter Berechnungsmethoden ein geeignetes Serum ermittelt. Ein solches Serum dient nicht nur zur Verjüngung der Haut, sondern auch bei folgenden Anwendungsfällen:
+                    <ul>
+                      <li>Falten</li>
+                      <li>dehydrierte Haut</li>
+                      <li>fettige und problematische Haut</li>
+                      <li>Hyperpigmentierung</li>
+                      <li>Narben</li>
+                      <li>Aknenarben</li>
+                      <li>vergrößerte Poren</li>
+                      <li>Dehnungsstreifen</li>
+                      <li>Alopezie</li>
+                    </ul>
+                    </Typography>
+                  </CardContent>
+                </Card>
               </Grid>
-              <Grid item xs={12} md={5}>
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  gutterBottom
-                  align="center"
-                >
-                  HAUTVERJÜNGUNG
-                </Typography>
-                <Typography align="justify">
-                  Microneedling PhiBright ist eine Weiterentwicklung der Mikronadel-Technik, welche eine personalisierte Behandlung unter Berücksichtigung individueller Bedürfnisse der verschiedenen Hauttypen und -bedingungen anbietet.
-                  <br/>
-                  <br/>
-                  Eine Palette von 15 verschiedenen PhiBright-Sera ermöglicht eine individuelle Behandlung und einen von der Art und des Zustands der zu behandelnden Haut abhängigen Ansatz.
-                  <br/>
-                  <br/>
-                  Durch die individuelle Beratung und der gemeinsamen Analyse des Hauttyps, wird mit Hilfe etablierter Berechnungsmethoden ein geeignetes Serum ermittelt. Ein solches Serum dient nicht nur zur Verjüngung der Haut, sondern auch bei folgenden Anwendungsfällen:
-                </Typography>
-                <ul>
-                  <li>Falten</li>
-                  <li>dehydrierte Haut</li>
-                  <li>fettige und problematische Haut</li>
-                  <li>Hyperpigmentierung</li>
-                  <li>Narben</li>
-                  <li>Aknenarben</li>
-                  <li>vergrößerte Poren</li>
-                  <li>Dehnungsstreifen</li>
-                  <li>Alopezie</li>
-                </ul>
+              <Grid item xs={12} md={6}>
+                <Card>
+                  <CardMedia
+                    component="img"
+                    image="/facial_treatment3.jpg"
+                    alt="facial_treatment"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      GESICHTSBEHANDLUNG
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                    Die apparative Kosmetik ermöglicht Behandlungsmöglichkeiten auf einem ganz hohen Niveau. Dazu gehört das Aquafacial – auch bekannt als Hydrafacial. Es ist eine einzigartige Gesichtsbehandlung, bei der alle Hauttypen und Hautstrukturen effektiv behandelt werden. Dabei wird die Haut gereinigt, geglättet und mit Feuchtigkeit versorgt und beginnt somit wieder zu strahlen. Zu den Vorteilen gehören:
+                    <ul>
+                      <li>Sichtbare Ergebnisse bereits nach wenigen Tagen</li>
+                      <li>Weiche und strahlende Haut nach schon einer Anwendung</li>
+                      <li>Porentiefe Reinigung komponiert mit tiefgreifender Hydratisierung</li>
+                      <li>Die Hautgesundheit wird verbessert</li>
+                      <li>Reduziert fettige und verstopfte Haut</li>
+                      <li>Das Hautbild wirkt ebenmäßiger</li>
+                      <li>Fortgeschrittene Alterserscheinungen werden gemildert</li>
+                      <li>Reduziert Hyperpigmentierung und Sonnenschäden</li>
+                      <li>Anregung der Mikrozirkulation der Haut</li>
+                      <li>Keine Ausfallzeit und Nebenwirkungen</li>
+                      <li>Wissenschaftlich nachgewiesene Wirksamkeit</li>
+                      <li>Die Elastizität und Straffheit der Haut wird erhöht</li>
+                      <li>Erfolgreicher Einsatz in der Rosazea-Therapie</li>
+                    </ul>
+                    </Typography>
+                  </CardContent>
+                </Card>
               </Grid>
-              <Grid item xs={12} md={2}>
+              <Grid item xs={12} md={6}>
+                <Card>
+                  <CardMedia
+                    component="img"
+                    image="/eyebrows4.jpg"
+                    alt="eyebrows"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      AUGENBRAUEN
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Mit dieser Behandlungsmethode werden Augenbrauen mit einer Pinzette, mit wachs oder mit der Fadentechnik geformt. Dabei hilt das Augenbrauen-Lifting die Brauen in die gewünschten Form zu bringen und zu fixieren. Dafür werden die Härchen zunächst in die jeweilige Form gekämmt – meistens nach oben, um mehr Fülle zu schaffen und die Augenbrauen zu verdichten. Dann werden die Augenbrauenhaare in dieser Position mit einem wasserlöslichen Kleber fixiert. Im nächsten Schritt, der <i>Brow Lamination</i>, werden spezielle Cremes auf die Augenbrauen aufgetragen, die jeweils ca. zehn Minuten einwirken müssen. Im Anschluss werden die Augenbrauen (nach Wunsch) gefärbt und mit einem Vitaminkomplex gepflegt.
+                    </Typography>
+                  </CardContent>
+                </Card>
               </Grid>
-              <Grid item xs={12} md={5}>
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  gutterBottom
-                  align="center"
-                >
-                  GESICHTSBEHANDLUNG
-                </Typography>
-                <Typography align="justify">
-                  Die apparative Kosmetik ermöglicht Behandlungsmöglichkeiten auf einem ganz hohen Niveau. Dazu gehört das Aquafacial – auch bekannt als Hydrafacial. Es ist eine einzigartige Gesichtsbehandlung, bei der alle Hauttypen und Hautstrukturen effektiv behandelt werden. Dabei wird die Haut gereinigt, geglättet und mit Feuchtigkeit versorgt und beginnt somit wieder zu strahlen. Zu den Vorteilen gehören:
-                </Typography>
-                <ul>
-                  <li>Sichtbare Ergebnisse bereits nach wenigen Tagen</li>
-                  <li>Weiche und strahlende Haut nach schon einer Anwendung</li>
-                  <li>Porentiefe Reinigung komponiert mit tiefgreifender Hydratisierung</li>
-                  <li>Die Hautgesundheit wird verbessert</li>
-                  <li>Reduziert fettige und verstopfte Haut</li>
-                  <li>Das Hautbild wirkt ebenmäßiger</li>
-                  <li>Fortgeschrittene Alterserscheinungen werden gemildert</li>
-                  <li>Reduziert Hyperpigmentierung und Sonnenschäden</li>
-                  <li>Anregung der Mikrozirkulation der Haut</li>
-                  <li>Keine Ausfallzeit und Nebenwirkungen</li>
-                  <li>Wissenschaftlich nachgewiesene Wirksamkeit</li>
-                  <li>Die Elastizität und Straffheit der Haut wird erhöht</li>
-                  <li>Erfolgreicher Einsatz in der Rosazea-Therapie</li>
-                </ul>
-              </Grid>
-              <Grid item xs={12} md={5}>
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  gutterBottom
-                  align="center"
-                >
-                  AUGENBRAUEN
-                </Typography>
-                <Typography align="justify">
-                  Mit dieser Behandlungsmethode werden Augenbrauen mit einer Pinzette, mit wachs oder mit der Fadentechnik geformt. Dabei hilt das Augenbrauen-Lifting die Brauen in die gewünschten Form zu bringen und zu fixieren. Dafür werden die Härchen zunächst in die jeweilige Form gekämmt – meistens nach oben, um mehr Fülle zu schaffen und die Augenbrauen zu verdichten. Dann werden die Augenbrauenhaare in dieser Position mit einem wasserlöslichen Kleber fixiert. Im nächsten Schritt, der <i>Brow Lamination</i>, werden spezielle Cremes auf die Augenbrauen aufgetragen, die jeweils ca. zehn Minuten einwirken müssen. Im Anschluss werden die Augenbrauen (nach Wunsch) gefärbt und mit einem Vitaminkomplex gepflegt.
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={2}>
-              </Grid>
-              <Grid item xs={12} md={5}>
-                <Typography
-                  variant="h6"
-                  component="h2"
-                  gutterBottom
-                  align="center"
-                >
-                  Henna Brows
-                </Typography>
-                <Typography align="justify">
-                Henna Brows ist eine spezielle Form der Augenbrauentönung. Henna ist schon seit Jahrhunderten in der arabischen Welt als Färbe- und Schönheitsmittel für Haare und Haut bekannt. Hergestellt wird es aus den getrockneten und pulverisierten Blättern des Henna-Strauches. Je nach Hauttyp kann Henna Brows bis zu 4 Wochen halten. Bei trockener Haut hält es etwas länger als bei öliger Haut.
-                </Typography>
+              <Grid item xs={12} md={6}>
+                <Card>
+                  <CardMedia
+                    component="img"
+                    image="/henna_brows3.jpg"
+                    alt="henna_brows"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      HENNA BROWS
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Mit dieser Behandlungsmethode werden Augenbrauen mit einer Pinzette, mit wachs oder mit der Fadentechnik geformt. Dabei hilt das Augenbrauen-Lifting die Brauen in die gewünschten Form zu bringen und zu fixieren. Dafür werden die Härchen zunächst in die jeweilige Form gekämmt – meistens nach oben, um mehr Fülle zu schaffen und die Augenbrauen zu verdichten. Dann werden die Augenbrauenhaare in dieser Position mit einem wasserlöslichen Kleber fixiert. Im nächsten Schritt, der <i>Brow Lamination</i>, werden spezielle Cremes auf die Augenbrauen aufgetragen, die jeweils ca. zehn Minuten einwirken müssen. Im Anschluss werden die Augenbrauen (nach Wunsch) gefärbt und mit einem Vitaminkomplex gepflegt.
+                    </Typography>
+                  </CardContent>
+                </Card>
               </Grid>
             </Grid>
           </Element>
@@ -490,7 +510,7 @@ export default function Home() {
               sx={{
                 fontWeight: "light",
                 mb: !matchMedium ? 3 : 2,
-                mt: 4,
+                mt: 5,
               }}
             >
               BEWERTUNGEN
