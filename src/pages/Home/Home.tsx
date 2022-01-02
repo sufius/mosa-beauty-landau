@@ -451,6 +451,34 @@ export default function Home() {
                   <li>Erfolgreicher Einsatz in der Rosazea-Therapie</li>
                 </ul>
               </Grid>
+              <Grid item xs={12} md={5}>
+                <Typography
+                  variant="h6"
+                  component="h2"
+                  gutterBottom
+                  align="center"
+                >
+                  AUGENBRAUEN
+                </Typography>
+                <Typography align="justify">
+                  Mit dieser Behandlungsmethode werden Augenbrauen mit einer Pinzette, mit wachs oder mit der Fadentechnik geformt. Dabei hilt das Augenbrauen-Lifting die Brauen in die gewünschten Form zu bringen und zu fixieren. Dafür werden die Härchen zunächst in die jeweilige Form gekämmt – meistens nach oben, um mehr Fülle zu schaffen und die Augenbrauen zu verdichten. Dann werden die Augenbrauenhaare in dieser Position mit einem wasserlöslichen Kleber fixiert. Im nächsten Schritt, der <i>Brow Lamination</i>, werden spezielle Cremes auf die Augenbrauen aufgetragen, die jeweils ca. zehn Minuten einwirken müssen. Im Anschluss werden die Augenbrauen (nach Wunsch) gefärbt und mit einem Vitaminkomplex gepflegt.
+                </Typography>
+              </Grid>
+              <Grid item xs={12} md={2}>
+              </Grid>
+              <Grid item xs={12} md={5}>
+                <Typography
+                  variant="h6"
+                  component="h2"
+                  gutterBottom
+                  align="center"
+                >
+                  Henna Brows
+                </Typography>
+                <Typography align="justify">
+                Henna Brows ist eine spezielle Form der Augenbrauentönung. Henna ist schon seit Jahrhunderten in der arabischen Welt als Färbe- und Schönheitsmittel für Haare und Haut bekannt. Hergestellt wird es aus den getrockneten und pulverisierten Blättern des Henna-Strauches. Je nach Hauttyp kann Henna Brows bis zu 4 Wochen halten. Bei trockener Haut hält es etwas länger als bei öliger Haut.
+                </Typography>
+              </Grid>
             </Grid>
           </Element>
           <Element name="section_4">
