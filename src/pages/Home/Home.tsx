@@ -318,7 +318,7 @@ export default function Home() {
                   />
                 </Card>
                 <Typography paragraph align="justify">
-                  Als Kleinunternehmerin berate ich sie stilsicher und
+                  Als Kleinunternehmerin berate ich Sie stilsicher und
                   zielorientiert für alle Belange rund um das Thema Schönheit und Kosmetik.
                   Ich habe mich diesem Bereich mit Haut und Haaren verschrieben und kümmere
                   mich um meine Kunden nicht nur während der Behandlung sondern auch während
