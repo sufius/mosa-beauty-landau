@@ -347,7 +347,7 @@ export default function Home() {
             </Typography>
             <Grid container spacing={4} sx={{ mt: 0 }}>
               <Grid item xs={12} md={6}>
-                <Card>
+                <Card sx={{ height: "100%" }}>
                   <CardMedia
                     component="img"
                     image="/photoepilation.jpg"
@@ -367,7 +367,7 @@ export default function Home() {
                 </Card>
               </Grid>
               <Grid item xs={12} md={6}>
-                <Card>
+                <Card sx={{ height: "100%" }}>
                   <CardMedia
                     component="img"
                     height="372"
@@ -399,7 +399,7 @@ export default function Home() {
                 </Card>
               </Grid>
               <Grid item xs={12} md={6}>
-                <Card>
+                <Card sx={{ height: "100%" }}>
                   <CardMedia
                     component="img"
                     height="373"
@@ -434,7 +434,7 @@ export default function Home() {
                 </Card>
               </Grid>
               <Grid item xs={12} md={6}>
-                <Card>
+                <Card sx={{ height: "100%" }}>
                   <CardMedia
                     component="img"
                     image="/facial_treatment3.jpg"
@@ -466,7 +466,7 @@ export default function Home() {
                 </Card>
               </Grid>
               <Grid item xs={12} md={6}>
-                <Card>
+                <Card sx={{ height: "100%" }}>
                   <CardMedia
                     component="img"
                     image="/eyebrows4.jpg"
@@ -483,7 +483,7 @@ export default function Home() {
                 </Card>
               </Grid>
               <Grid item xs={12} md={6}>
-                <Card>
+                <Card sx={{ height: "100%" }}>
                   <CardMedia
                     component="img"
                     image="/henna_brows3.jpg"
