@@ -318,19 +318,14 @@ export default function Home() {
                   />
                 </Card>
                 <Typography paragraph align="justify">
-                  Als Kleinunternehmerin berate und lorem ipsum dolor sit amet,
-                  consetetur sadipscing elitr. Lorem ipsum dolor sit amet,
-                  consetetur sadipscing elitr Lorem ipsum dolor sit amet,
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                  Lorem ipsum.
+                  Als Kleinunternehmerin berate ich sie stilsicher und
+                  zielorientiert für alle Belange rund um das Thema Schönheit und Kosmetik.
+                  Ich habe mich diesem Bereich mit Haut und Haaren verschrieben und kümmere
+                  mich um meine Kunden nicht nur während der Behandlung sondern auch während
+                  Einwirkzeiten von Farben, Masken, Cremes und Co. Für jeden Hauttyp biete ich
+                  eine umfassende Beratung und sorge damit für ein einmaliges Wohlfühlerlebnis.
+                  Ich kenne die etablierten Substanzen und weiß wie sie wirken, was man nicht
+                  nur schnell feststellen wird sondern bei Bedarf auch erleben kann.
                 </Typography>
               </Grid>
             </Grid>
