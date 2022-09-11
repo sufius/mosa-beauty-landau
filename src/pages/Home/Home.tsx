@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useRef } from "react";
 import { styled } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -31,6 +31,7 @@ import TextField from "@mui/material/TextField";
 import Alert from "@mui/material/Alert";
 import Obfuscate from "react-obfuscate";
 import CallIcon from "@mui/icons-material/Call";
+import emailjs from '@emailjs/browser';
 import DcpCarousel from "../../components/DcpCarousel";
 import Hero from "../../components/Hero";
 import DcpPhoneInput from "../../components/DcpPhoneInput";
@@ -63,6 +64,7 @@ const defaultValues = {
 };
 
 export default function Home() {
+  const form = useRef();
   const theme = useTheme();
   const matchMedium = useMediaQuery(theme.breakpoints.down("md"));
   const matchSmall = useMediaQuery(theme.breakpoints.down("sm"));
@@ -100,20 +102,17 @@ export default function Home() {
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     setIsSubmitting(true);
-    const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    };
-    fetch("/request/quotation", requestOptions)
+
+    emailjs.sendForm('service_1iuevoc', 'template_2t6a2sx', form.current!, 'y24WgTiDwXkqvhMT3')
       .then((response) => {
-        if (!response.ok) {
-          throw Error(response.statusText);
+        if (response.text !== "OK") {
+          throw Error(response.text);
         }
-        return response;
-      })
-      .then(() => {
         setSubmitted(true);
+        return response;
+      }, (error) => {
+        setSubmitted(false);
+        console.log(error.text);
       })
       .catch(() => {
         setSubmitted(false);
@@ -413,7 +412,9 @@ export default function Home() {
                       <br/>
                       <br/>
                       Durch die individuelle Beratung und der gemeinsamen Analyse des Hauttyps, wird mit Hilfe etablierter Berechnungsmethoden ein geeignetes Serum ermittelt. Ein solches Serum dient nicht nur zur Verjüngung der Haut, sondern auch bei folgenden Anwendungsfällen:
-                    <ul>
+                    
+                    </Typography>
+                    <Typography variant="body2" component="ul" color="textSecondary" sx={{mt: 2}}>
                       <li>Falten</li>
                       <li>dehydrierte Haut</li>
                       <li>fettige und problematische Haut</li>
@@ -423,7 +424,6 @@ export default function Home() {
                       <li>vergrößerte Poren</li>
                       <li>Dehnungsstreifen</li>
                       <li>Alopezie</li>
-                    </ul>
                     </Typography>
                   </CardContent>
                 </Card>
@@ -441,7 +441,8 @@ export default function Home() {
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                     Die apparative Kosmetik ermöglicht Behandlungsmöglichkeiten auf einem ganz hohen Niveau. Dazu gehört das Aquafacial – auch bekannt als Hydrafacial. Es ist eine einzigartige Gesichtsbehandlung, bei der alle Hauttypen und Hautstrukturen effektiv behandelt werden. Dabei wird die Haut gereinigt, geglättet und mit Feuchtigkeit versorgt und beginnt somit wieder zu strahlen. Zu den Vorteilen gehören:
-                    <ul>
+                    </Typography>
+                    <Typography variant="body2" component="ul" color="textSecondary" sx={{mt: 2}}>
                       <li>Sichtbare Ergebnisse bereits nach wenigen Tagen</li>
                       <li>Weiche und strahlende Haut nach schon einer Anwendung</li>
                       <li>Porentiefe Reinigung komponiert mit tiefgreifender Hydratisierung</li>
@@ -455,7 +456,6 @@ export default function Home() {
                       <li>Wissenschaftlich nachgewiesene Wirksamkeit</li>
                       <li>Die Elastizität und Straffheit der Haut wird erhöht</li>
                       <li>Erfolgreicher Einsatz in der Rosazea-Therapie</li>
-                    </ul>
                     </Typography>
                   </CardContent>
                 </Card>
@@ -534,6 +534,7 @@ export default function Home() {
                 noValidate
                 autoComplete="off"
                 onSubmit={handleSubmit(onSubmit)}
+                ref={form}
               >
                 <Card>
                   <CardHeader
