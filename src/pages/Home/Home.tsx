@@ -771,8 +771,8 @@ export default function Home() {
                     >
                       Instagram:
                     </Typography>
-                    <Link
-                      to={{ pathname: `https://www.instagram.com/${process.env.REACT_APP_INSTAGRAM}/` }}
+                    <a
+                      href={`https://www.instagram.com/${process.env.REACT_APP_INSTAGRAM}/`}
                       target="_blank" rel="noopener noreferrer"
                       style={{
                         display: "flex",
@@ -783,7 +783,7 @@ export default function Home() {
                       }}
                     >
                       {process.env.REACT_APP_INSTAGRAM}
-                    </Link>
+                    </a>
                   </>) : null}
                 {process.env.REACT_APP_FACEBOOK ? (
                   <>
@@ -795,8 +795,8 @@ export default function Home() {
                     >
                       Facebook:
                     </Typography>
-                    <Link
-                      to={{ pathname: `https://www.facebook.com/${process.env.REACT_APP_FACEBOOK}/` }}
+                    <a
+                      href={`https://www.facebook.com/${process.env.REACT_APP_FACEBOOK}/`}
                       target="_blank" rel="noopener noreferrer"
                       style={{
                         display: "flex",
@@ -810,7 +810,7 @@ export default function Home() {
                       }}
                     >
                       {process.env.REACT_APP_FACEBOOK}
-                    </Link>
+                    </a>
                   </>) : null}
               </Grid>
               <Grid item xs={12} sm={4}>
